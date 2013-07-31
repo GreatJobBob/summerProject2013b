@@ -123,7 +123,6 @@
 		6F1EF0F213B5CA3D00DC78F6 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1EF0F113B5CA3D00DC78F6 /* RootViewController.m */; };
 		6F1EF0FE13B5CB3800DC78F6 /* RootViewControllerInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1EF0FD13B5CB3800DC78F6 /* RootViewControllerInterface.m */; };
 		6F1EF10613B5DDE800DC78F6 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1EF10513B5DDE800DC78F6 /* MessageUI.framework */; };
-		E613CCDC179AF4E5004A2B56 /* facemask.png in Resources */ = {isa = PBXBuildFile; fileRef = E613CCDB179AF4E5004A2B56 /* facemask.png */; };
 		E637C2ED179EACBD0041EC45 /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E637C2EC179EACBD0041EC45 /* iPadStoryboard.storyboard */; };
 		E65ACF2B178A1042009958FC /* background-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E65ACF0E178A1042009958FC /* background-hd.plist */; };
 		E65ACF2C178A1042009958FC /* background-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = E65ACF0F178A1042009958FC /* background-hd.pvr.ccz */; };
@@ -426,7 +425,6 @@
 		6F1EF0FC13B5CB3800DC78F6 /* RootViewControllerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewControllerInterface.h; sourceTree = "<group>"; };
 		6F1EF0FD13B5CB3800DC78F6 /* RootViewControllerInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewControllerInterface.m; sourceTree = "<group>"; };
 		6F1EF10513B5DDE800DC78F6 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		E613CCDB179AF4E5004A2B56 /* facemask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facemask.png; sourceTree = "<group>"; };
 		E637C2EC179EACBD0041EC45 /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
 		E65ACF0E178A1042009958FC /* background-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "background-hd.plist"; sourceTree = "<group>"; };
 		E65ACF0F178A1042009958FC /* background-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-hd.pvr.ccz"; sourceTree = "<group>"; };
@@ -978,7 +976,6 @@
 			children = (
 				E6B6F6D8178AE550007C6B92 /* frame.png */,
 				E6B6F6D9178AE550007C6B92 /* frame@2x.png */,
-				E613CCDB179AF4E5004A2B56 /* facemask.png */,
 				E6B8FFA4179C871E009E5B73 /* faceMaskv1.png */,
 				E6BD499717A15A5D00ED6A7E /* FaceMask2Transparent.png */,
 				E6BD499417A15A5500ED6A7E /* FaceMask2.png */,
@@ -1120,7 +1117,6 @@
 				E6B6F6E6178AE550007C6B92 /* steve.png in Resources */,
 				E6B6F6E7178AE550007C6B92 /* Screenshot.png in Resources */,
 				E6A4B61D178F420C005A2D6E /* Robot-4.jpg in Resources */,
-				E613CCDC179AF4E5004A2B56 /* facemask.png in Resources */,
 				E6B8FFA5179C871F009E5B73 /* faceMaskv1.png in Resources */,
 				E6B8FFA8179C8742009E5B73 /* ClearedFaces2.png in Resources */,
 				E6B8FFAA179C8748009E5B73 /* ClearedFaces.png in Resources */,
