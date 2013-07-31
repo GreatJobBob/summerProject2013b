@@ -85,6 +85,15 @@
             sPlist = @"sprites-hd.plist";            
         }
 
+        
+        
+        // Determine names of sprite sheets and plists to load
+        NSString *moleSheet = @"T.png";
+        NSString *molePlist = @"Thulpster.plist";
+        
+        
+        
+        
         // Load background and foreground
         [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:bgPlist];       
         [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:fgPlist];
@@ -108,31 +117,35 @@
         [self addChild:upper z:-1];
 
         // Load sprites
-        CCSpriteBatchNode *spriteNode = [CCSpriteBatchNode batchNodeWithFile:sSheet];
+        CCSpriteBatchNode *spriteNode = [CCSpriteBatchNode batchNodeWithFile:moleSheet];
        
         [self addChild:spriteNode z:0];
-        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:sPlist];      
+        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:molePlist];
 
         moles = [[NSMutableArray alloc] init];
 
-        CCSprite *mole1 = [CCSprite spriteWithSpriteFrameName:@"mole_1.png"];
-        mole1.position = [self convertPoint:ccp(85, 85)];
+
+        CCSprite *mole1 = [CCSprite spriteWithSpriteFrameName:@"Grad200.png"];
+        mole1.position = [self convertPoint:ccp(385, 85)];
         [spriteNode addChild:mole1];
         [moles addObject:mole1];
 
-        CCSprite *mole2 = [CCSprite spriteWithSpriteFrameName:@"mole_1.png"];
+ 
+ 
+        CCSprite *mole2 = [CCSprite spriteWithSpriteFrameName:@"Grad200.png"];
         mole2.position = [self convertPoint:ccp(240, 85)];
         [spriteNode addChild:mole2];
         [moles addObject:mole2];
 
         
         // load custom mole
+      
         
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory
         
         NSString *filePath = [documentsPath stringByAppendingPathComponent:@"myMole.png"]; //Add the file name
-         
+        
         //If file exist in documents folder use that one
         if([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
             NSData *pngData = [NSData dataWithContentsOfFile:filePath];
@@ -145,6 +158,46 @@
             //Do somthing else.
         }
 
+        
+        
+        // Load sprites
+        CCSpriteBatchNode *spriteNodeA = [CCSpriteBatchNode batchNodeWithFile:moleSheet];
+        
+        [self addChild:spriteNodeA z:1];
+        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:molePlist];
+       
+       
+        CCSprite *moleA = [CCSprite spriteWithSpriteFrameName:@"moleHeadset200.png"];
+       
+        
+        moleA.position = [self convertPoint:ccp(85, 35)];
+        //[spriteNodeA addChild:moleA];
+        [moleA addChild:myMole z:-1];
+       
+        [moles addObject:moleA];
+    
+        /*
+        
+        CCNode *stars = [CCNode node];
+        
+        CCSprite *star1 = [CCSprite spriteWithFile:@"star.png"];
+        star1.position = ccp(-10, 0);
+        [stars addChild:star1];
+        
+        CCSprite *star2 = [CCSprite spriteWithFile:@"star.png"];
+        star2.position = ccp(0, 0);
+        [stars addChild:star2];
+        
+        CCSprite *star3 = [CCSprite spriteWithFile:@"star.png"];
+        star3.position = ccp(10, 0);
+        [stars addChild:star3];
+        
+        [self addChild:stars];
+        
+        */
+        
+        
+ 
         
         // load custom mole
         
@@ -159,19 +212,29 @@
        // mole3.texture = mole2.texture;
         myMole.visible = true;
         
-       [self addChild:myMole z:0];
+       [self addChild:moleA z:0];
        // CCSprite *mole3 = [CCSprite spriteWithSpriteFrameName:@"mole_1.png"];
-        myMole.position = [self convertPoint:ccp(395, 85)];
-       // [spriteNode addChild:mole3];
-        [moles addObject:myMole];
+       
+        
+        
+        myMole.position = [self convertPoint:ccp(105, 203)];
+       
+        
+        
+        
+        // [spriteNode addChild:mole3];
+        //[moles addObject:myMole];
         
         [self schedule:@selector(tryPopMoles:) interval:0.5];
         
         // Create animations
-        laughAnim = [self animationFromPlist:@"laughAnim" delay:0.1];        
+      /*
+        laughAnim = [self animationFromPlist:@"laughAnim" delay:0.1];
         hitAnim = [self animationFromPlist:@"hitAnim" delay:0.02];
         [[CCAnimationCache sharedAnimationCache] addAnimation:laughAnim name:@"laughAnim"];
         [[CCAnimationCache sharedAnimationCache] addAnimation:hitAnim name:@"hitAnim"];
+        */
+        
         
         // Set touch enabled
         self.isTouchEnabled = YES;
@@ -193,7 +256,7 @@
                                                             selectedImage: @"Icon-Small.png"
                                                                    target:self
                                                                  selector:@selector(buttonClicked:)];
-        myMenu.position = ccp(100,180);
+        myMenu.position = ccp(320,180);
         myMenu.scale = 0.75;
         [myMenu addChild:menuItem1];
         [self addChild:myMenu z:1];
@@ -232,13 +295,14 @@
  //   [mole setDisplayFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"mole_1.png"]];
     
     // Pop mole
-    CCMoveBy *moveUp = [CCMoveBy actionWithDuration:0.3 position:ccp(0, 100)];   // changing this to 200 makes the game a lot different bk
+    CCMoveBy *moveUp = [CCMoveBy actionWithDuration:0.3 position:ccp(0, 150)];   // changing this to 200 makes the game a lot different bk
     CCCallFunc *setTappable = [CCCallFuncN actionWithTarget:self selector:@selector(setTappable:)];
-    CCEaseInOut *easeMoveUp = [CCEaseInOut actionWithAction:moveUp rate:3.0];
-    CCAnimate *laugh = [CCAnimate actionWithAnimation:laughAnim restoreOriginalFrame:YES];
+    CCEaseInOut *easeMoveUp = [CCEaseInOut actionWithAction:moveUp rate:6.0];
+    CCAction *wait = [CCMoveBy actionWithDuration:0.5 position:ccp(0,0)];
+
+ //   CCAnimate *laugh = [CCAnimate actionWithAnimation:laughAnim restoreOriginalFrame:YES];
     CCCallFunc *unsetTappable = [CCCallFuncN actionWithTarget:self selector:@selector(unsetTappable:)];    
     CCAction *easeMoveDown = [easeMoveUp reverse];
-    CCAction *wait = [CCMoveBy actionWithDuration:0.2 position:ccp(0,0)];
  //   [mole runAction:[CCSequence actions:easeMoveUp, setTappable, laugh, unsetTappable, easeMoveDown, nil]];
   
     /// bk  turn off laugh

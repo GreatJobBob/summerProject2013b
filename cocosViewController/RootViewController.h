@@ -9,9 +9,19 @@
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
 #import <MessageUI/MFMailComposeViewController.h>
+#import <iAd/iAd.h>
+#import <Foundation/Foundation.h>
+#import "cocos2d.h"
 
-@interface RootViewController : UIViewController <MFMailComposeViewControllerDelegate> {
 
+@interface RootViewController : UIViewController <ADBannerViewDelegate,  MFMailComposeViewControllerDelegate>  {
+
+    ADBannerView *bannerView;
+
+    
 }
+
+-(void) moveBannerOnScreen;
+
 
 @end

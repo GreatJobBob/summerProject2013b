@@ -19,16 +19,15 @@
 	CGFloat _firstY;
     UIImagePickerController *picker;
     UIImage *pickedImage;
-   
+    UIImageView *photoImage;
+    UIView *canvas;    
+    CAShapeLayer *_marque;
     
     IBOutlet UIImageView *faceImageView2;
     IBOutlet UIImageView *faceImage;
     IBOutlet UIView *faceImageView;
-  IBOutlet UIImageView * selectedImage;
-  UIImageView *photoImage;
-  UIView *canvas;
-  
-  CAShapeLayer *_marque;
+    IBOutlet UIImageView * selectedImage;
+ 
 }
 
 @property (nonatomic, retain) IBOutlet UIView *canvas;
@@ -43,6 +42,7 @@
 - (IBAction)takePhoto:(id)sender;
 - (IBAction)SaveButtonClicked:(id)sender;
 
+- (UIImage *)clipImage:(UIImage *)imageIn withMask:(UIImage *)maskIn atRect:(CGRect) maskRect;
 
 
 @end

@@ -6,6 +6,11 @@
 //  Copyright Ray Wenderlich 2011. All rights reserved.
 //
 
+
+
+/********* this file is not used *********/
+
+
 #import "cocos2d.h"
 
 #import "WhackAMoleAppDelegate.h"
@@ -18,6 +23,7 @@
 @implementation WhackAMoleAppDelegate
 
 @synthesize window;
+
 
 - (void) removeStartupFlicker
 {
@@ -98,6 +104,46 @@
 	[director setDisplayFPS:YES];
 	
 	
+    /************************ iad *******************************************/
+    
+    static NSString * const kADBannerViewClass = @"ADBannerView";
+    
+    if (NSClassFromString(kADBannerViewClass) != nil) {
+        
+        
+        
+     ADBannerView   *bannerView = [[ADBannerView alloc] initWithFrame:CGRectZero];
+        
+        [bannerView setRequiredContentSizeIdentifiers:[NSSet setWithObjects:
+                                                            
+                                                            ADBannerContentSizeIdentifierLandscape,
+                                                            
+                                                             nil]];
+        
+        
+        
+        bannerView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierLandscape;
+        
+        
+        
+        [bannerView setDelegate:self];
+        
+        
+        
+        [window addSubview:bannerView];
+        
+     //   [self moveBannerOffScreen];
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
 	// make the OpenGLView a child of the view controller
 	[viewController setView:glView];
 	
@@ -117,7 +163,7 @@
 	[self removeStartupFlicker];
 	
 	// Run the intro Scene
-	[[CCDirector sharedDirector] runWithScene: [Intro scene]];
+//	[[CCDirector sharedDirector] runWithScene: [Intro scene]];
 }
 
 

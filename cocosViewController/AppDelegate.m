@@ -20,27 +20,7 @@
 
 @synthesize window;
 
-- (void) removeStartupFlicker
-{
-	//
-	// THIS CODE REMOVES THE STARTUP FLICKER
-	//
-	// Uncomment the following code if you Application only supports landscape mode
-	//
-#if GAME_AUTOROTATION == kGameAutorotationUIViewController
 
-//	CC_ENABLE_DEFAULT_GL_STATES();
-//	CCDirector *director = [CCDirector sharedDirector];
-//	CGSize size = [director winSize];
-//	CCSprite *sprite = [CCSprite spriteWithFile:@"Default.png"];
-//	sprite.position = ccp(size.width/2, size.height/2);
-//	sprite.rotation = -90;
-//	[sprite visit];
-//	[[director openGLView] swapBuffers];
-//	CC_ENABLE_DEFAULT_GL_STATES();
-	
-#endif // GAME_AUTOROTATION == kGameAutorotationUIViewController	
-}
 - (void) applicationDidFinishLaunching:(UIApplication*)application
 {
 	// Init the window
@@ -57,15 +37,16 @@
 	// Init the View Controller
 	viewController = [[RootViewController alloc] initWithNibName:nil bundle:nil];
 	viewController.wantsFullScreenLayout = YES;
-	
-    
     
     
     // i added bob k
-    window.rootViewController = viewController;
+  //  window.rootViewController = viewController;
     
+    [window addSubview:viewController.view];
+    [window makeKeyAndVisible];
+
     
-    
+    /*
     
 	//
 	// Create the EAGLView manually
@@ -81,7 +62,7 @@
 	// attach the openglView to the director
 	[director setOpenGLView:glView];
 	
-//	// Enables High Res mode (Retina Display) on iPhone 4 and maintains low res on all other devices
+    //	// Enables High Res mode (Retina Display) on iPhone 4 and maintains low res on all other devices
 	if( ! [director enableRetinaDisplay:YES] )
 		CCLOG(@"Retina Display Not supported");
 	
@@ -106,9 +87,12 @@
 	
 	// make the OpenGLView a child of the view controller
 	[viewController setView:glView];
+    
 	
 	// make the View Controller a child of the main window
 	[window addSubview: viewController.view];
+    
+    
 	
 	[window makeKeyAndVisible];
 	
@@ -116,8 +100,19 @@
 	// It can be RGBA8888, RGBA4444, RGB5_A1, RGB565
 	// You can change anytime.
 	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
-
+    
 	
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 	// Removes the startup flicker
 	[self removeStartupFlicker];
 	
@@ -126,6 +121,10 @@
     
     // Add the viewController to the RootViewControllerInterface.
     [[RootViewControllerInterface rootViewControllerInterfaceSharedInstance] setRootViewController:viewController];
+    
+    */
+
+ 
 }
 
 
@@ -164,6 +163,18 @@
 - (void)applicationSignificantTimeChange:(UIApplication *)application {
 	[[CCDirector sharedDirector] setNextDeltaTimeZero:YES];
 }
+
+
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner
+{
+    NSLog(@"bannerViewDidLoadAd");
+    
+    [RootViewController moveBannerOnScreen];
+}
+
+
+
+
 
 - (void)dealloc {
 	[[CCDirector sharedDirector] end];

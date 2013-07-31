@@ -113,8 +113,9 @@
         CGSize winSize = [CCDirector sharedDirector].winSize;
         
         
-        CCLabelTTF *goLabel = [CCLabelTTF labelWithString:@"Thrashing Time!" fontName:@"Verdana" fontSize:[self convertFontSize:48.0]];
+        CCLabelTTF *goLabel = [CCLabelTTF labelWithString:@"Thulpster" fontName:@"Verdana" fontSize:[self convertFontSize:48.0]];
         goLabel.position = ccp(winSize.width/2, winSize.height/2);
+        
         goLabel.scale = 0.1;
         [self addChild:goLabel z:10];
         [goLabel runAction:[CCScaleTo actionWithDuration:0.5 scale:1.0]];

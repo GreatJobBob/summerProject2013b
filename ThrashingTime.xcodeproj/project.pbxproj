@@ -121,9 +121,10 @@
 		6F1EF0EC13B5CA3D00DC78F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1EF0EB13B5CA3D00DC78F6 /* main.m */; };
 		6F1EF0EF13B5CA3D00DC78F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1EF0EE13B5CA3D00DC78F6 /* AppDelegate.m */; };
 		6F1EF0F213B5CA3D00DC78F6 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1EF0F113B5CA3D00DC78F6 /* RootViewController.m */; };
-		6F1EF0F513B5CA3D00DC78F6 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1EF0F413B5CA3D00DC78F6 /* HelloWorldLayer.m */; };
 		6F1EF0FE13B5CB3800DC78F6 /* RootViewControllerInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1EF0FD13B5CB3800DC78F6 /* RootViewControllerInterface.m */; };
 		6F1EF10613B5DDE800DC78F6 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1EF10513B5DDE800DC78F6 /* MessageUI.framework */; };
+		E613CCDC179AF4E5004A2B56 /* facemask.png in Resources */ = {isa = PBXBuildFile; fileRef = E613CCDB179AF4E5004A2B56 /* facemask.png */; };
+		E637C2ED179EACBD0041EC45 /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E637C2EC179EACBD0041EC45 /* iPadStoryboard.storyboard */; };
 		E65ACF2B178A1042009958FC /* background-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E65ACF0E178A1042009958FC /* background-hd.plist */; };
 		E65ACF2C178A1042009958FC /* background-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = E65ACF0F178A1042009958FC /* background-hd.pvr.ccz */; };
 		E65ACF2D178A1042009958FC /* background.plist in Resources */ = {isa = PBXBuildFile; fileRef = E65ACF10178A1042009958FC /* background.plist */; };
@@ -153,8 +154,10 @@
 		E65ACF45178A1042009958FC /* sprites.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = E65ACF28178A1042009958FC /* sprites.pvr.ccz */; };
 		E65ACF46178A1042009958FC /* wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E65ACF29178A1042009958FC /* wallpaper.jpg */; };
 		E65ACF47178A1042009958FC /* whack.caf in Resources */ = {isa = PBXBuildFile; fileRef = E65ACF2A178A1042009958FC /* whack.caf */; };
+		E693F52017A7EE90008A51EA /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E693F51F17A7EE90008A51EA /* iAd.framework */; };
 		E6A4B61D178F420C005A2D6E /* Robot-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6A4B61C178F420C005A2D6E /* Robot-4.jpg */; };
-		E6A4B62717918ACE005A2D6E /* faceMask.png in Resources */ = {isa = PBXBuildFile; fileRef = E6A4B62617918ACE005A2D6E /* faceMask.png */; };
+		E6AE232917A3F25000315C08 /* T.png in Resources */ = {isa = PBXBuildFile; fileRef = E6AE232817A3F25000315C08 /* T.png */; };
+		E6AE232C17A3F2D500315C08 /* Thulpster.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6AE232B17A3F2D500315C08 /* Thulpster.plist */; };
 		E6B6F6DC178AE550007C6B92 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B6F6C6178AE550007C6B92 /* Default-568h@2x.png */; };
 		E6B6F6DD178AE550007C6B92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6B6F6C8178AE550007C6B92 /* InfoPlist.strings */; };
 		E6B6F6DE178AE550007C6B92 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6B6F6CA178AE550007C6B92 /* MainWindow.xib */; };
@@ -166,11 +169,15 @@
 		E6B6F6E5178AE550007C6B92 /* frame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B6F6D9178AE550007C6B92 /* frame@2x.png */; };
 		E6B6F6E6178AE550007C6B92 /* steve.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B6F6DA178AE550007C6B92 /* steve.png */; };
 		E6B6F6E7178AE550007C6B92 /* Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B6F6DB178AE550007C6B92 /* Screenshot.png */; };
+		E6B8FFA5179C871F009E5B73 /* faceMaskv1.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B8FFA4179C871E009E5B73 /* faceMaskv1.png */; };
+		E6B8FFA8179C8742009E5B73 /* ClearedFaces2.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B8FFA7179C8742009E5B73 /* ClearedFaces2.png */; };
+		E6B8FFAA179C8748009E5B73 /* ClearedFaces.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B8FFA9179C8748009E5B73 /* ClearedFaces.png */; };
+		E6BD499517A15A5500ED6A7E /* FaceMask2.png in Resources */ = {isa = PBXBuildFile; fileRef = E6BD499417A15A5500ED6A7E /* FaceMask2.png */; };
+		E6BD499817A15A5D00ED6A7E /* FaceMask2Transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = E6BD499717A15A5D00ED6A7E /* FaceMask2Transparent.png */; };
 		E6E5DE0D178A05B100FFED67 /* HelloWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E5DE02178A05B100FFED67 /* HelloWorldScene.m */; };
 		E6E5DE0E178A05B100FFED67 /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E5DE04178A05B100FFED67 /* IntroScene.m */; };
 		E6E5DE0F178A05B100FFED67 /* photoCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E5DE06178A05B100FFED67 /* photoCropper.m */; };
 		E6E5DE10178A05B100FFED67 /* PhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E5DE08178A05B100FFED67 /* PhotoPicker.m */; };
-		E6E5DE12178A05B100FFED67 /* WhackAMoleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E5DE0C178A05B100FFED67 /* WhackAMoleAppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -416,11 +423,11 @@
 		6F1EF0EE13B5CA3D00DC78F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6F1EF0F013B5CA3D00DC78F6 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		6F1EF0F113B5CA3D00DC78F6 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		6F1EF0F313B5CA3D00DC78F6 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		6F1EF0F413B5CA3D00DC78F6 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		6F1EF0FC13B5CB3800DC78F6 /* RootViewControllerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewControllerInterface.h; sourceTree = "<group>"; };
 		6F1EF0FD13B5CB3800DC78F6 /* RootViewControllerInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewControllerInterface.m; sourceTree = "<group>"; };
 		6F1EF10513B5DDE800DC78F6 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		E613CCDB179AF4E5004A2B56 /* facemask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facemask.png; sourceTree = "<group>"; };
+		E637C2EC179EACBD0041EC45 /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
 		E65ACF0E178A1042009958FC /* background-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "background-hd.plist"; sourceTree = "<group>"; };
 		E65ACF0F178A1042009958FC /* background-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-hd.pvr.ccz"; sourceTree = "<group>"; };
 		E65ACF10178A1042009958FC /* background.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = background.plist; sourceTree = "<group>"; };
@@ -450,8 +457,10 @@
 		E65ACF28178A1042009958FC /* sprites.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = sprites.pvr.ccz; sourceTree = "<group>"; };
 		E65ACF29178A1042009958FC /* wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper.jpg; sourceTree = "<group>"; };
 		E65ACF2A178A1042009958FC /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whack.caf; sourceTree = "<group>"; };
+		E693F51F17A7EE90008A51EA /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		E6A4B61C178F420C005A2D6E /* Robot-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Robot-4.jpg"; sourceTree = "<group>"; };
-		E6A4B62617918ACE005A2D6E /* faceMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faceMask.png; sourceTree = "<group>"; };
+		E6AE232817A3F25000315C08 /* T.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = T.png; sourceTree = "<group>"; };
+		E6AE232B17A3F2D500315C08 /* Thulpster.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Thulpster.plist; sourceTree = "<group>"; };
 		E6B6F6C4178A2A7C007C6B92 /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		E6B6F6C6178AE550007C6B92 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E6B6F6C9178AE550007C6B92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -468,6 +477,11 @@
 		E6B6F6D9178AE550007C6B92 /* frame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "frame@2x.png"; sourceTree = "<group>"; };
 		E6B6F6DA178AE550007C6B92 /* steve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = steve.png; sourceTree = "<group>"; };
 		E6B6F6DB178AE550007C6B92 /* Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot.png; sourceTree = "<group>"; };
+		E6B8FFA4179C871E009E5B73 /* faceMaskv1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faceMaskv1.png; sourceTree = "<group>"; };
+		E6B8FFA7179C8742009E5B73 /* ClearedFaces2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClearedFaces2.png; sourceTree = "<group>"; };
+		E6B8FFA9179C8748009E5B73 /* ClearedFaces.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClearedFaces.png; sourceTree = "<group>"; };
+		E6BD499417A15A5500ED6A7E /* FaceMask2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FaceMask2.png; sourceTree = "<group>"; };
+		E6BD499717A15A5D00ED6A7E /* FaceMask2Transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FaceMask2Transparent.png; sourceTree = "<group>"; };
 		E6E5DE00178A05B100FFED67 /* GameConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		E6E5DE01178A05B100FFED67 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
 		E6E5DE02178A05B100FFED67 /* HelloWorldScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldScene.m; sourceTree = "<group>"; };
@@ -477,8 +491,6 @@
 		E6E5DE06178A05B100FFED67 /* photoCropper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = photoCropper.m; sourceTree = "<group>"; };
 		E6E5DE07178A05B100FFED67 /* PhotoPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoPicker.h; sourceTree = "<group>"; };
 		E6E5DE08178A05B100FFED67 /* PhotoPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoPicker.m; sourceTree = "<group>"; };
-		E6E5DE0B178A05B100FFED67 /* WhackAMoleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhackAMoleAppDelegate.h; sourceTree = "<group>"; };
-		E6E5DE0C178A05B100FFED67 /* WhackAMoleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhackAMoleAppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -486,6 +498,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E693F52017A7EE90008A51EA /* iAd.framework in Frameworks */,
 				6F1EF10613B5DDE800DC78F6 /* MessageUI.framework in Frameworks */,
 				6F1EEF8C13B5CA3B00DC78F6 /* QuartzCore.framework in Frameworks */,
 				6F1EEF8E13B5CA3B00DC78F6 /* OpenGLES.framework in Frameworks */,
@@ -505,7 +518,6 @@
 			isa = PBXGroup;
 			children = (
 				E6B6F6C5178AE550007C6B92 /* ImageManipulation */,
-				6F1EF10513B5DDE800DC78F6 /* MessageUI.framework */,
 				6F1EEF9B13B5CA3B00DC78F6 /* ThrashingTime */,
 				6F1EEF8A13B5CA3B00DC78F6 /* Frameworks */,
 				6F1EEF8813B5CA3B00DC78F6 /* Products */,
@@ -524,6 +536,8 @@
 		6F1EEF8A13B5CA3B00DC78F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6F1EF10513B5DDE800DC78F6 /* MessageUI.framework */,
+				E693F51F17A7EE90008A51EA /* iAd.framework */,
 				6F1EEF8B13B5CA3B00DC78F6 /* QuartzCore.framework */,
 				6F1EEF8D13B5CA3B00DC78F6 /* OpenGLES.framework */,
 				6F1EEF8F13B5CA3B00DC78F6 /* OpenAL.framework */,
@@ -543,11 +557,9 @@
 				6F1EF0EE13B5CA3D00DC78F6 /* AppDelegate.m */,
 				6F1EF0F013B5CA3D00DC78F6 /* RootViewController.h */,
 				6F1EF0F113B5CA3D00DC78F6 /* RootViewController.m */,
-				6F1EF0FC13B5CB3800DC78F6 /* RootViewControllerInterface.h */,
 				E6B6F6C4178A2A7C007C6B92 /* GameConfig.h */,
+				6F1EF0FC13B5CB3800DC78F6 /* RootViewControllerInterface.h */,
 				6F1EF0FD13B5CB3800DC78F6 /* RootViewControllerInterface.m */,
-				6F1EF0F313B5CA3D00DC78F6 /* HelloWorldLayer.h */,
-				6F1EF0F413B5CA3D00DC78F6 /* HelloWorldLayer.m */,
 				6F1EEF9C13B5CA3B00DC78F6 /* Resources */,
 				6F1EEFB013B5CA3B00DC78F6 /* libs */,
 				6F1EF0E913B5CA3D00DC78F6 /* Supporting Files */,
@@ -887,11 +899,15 @@
 		E65ACF0D178A1042009958FC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E6AE232B17A3F2D500315C08 /* Thulpster.plist */,
+				E6AE232817A3F25000315C08 /* T.png */,
 				E65ACF0E178A1042009958FC /* background-hd.plist */,
 				E65ACF0F178A1042009958FC /* background-hd.pvr.ccz */,
 				E65ACF10178A1042009958FC /* background.plist */,
 				E65ACF11178A1042009958FC /* background.pvr.ccz */,
 				E65ACF12178A1042009958FC /* Default.png */,
+				E6B8FFA7179C8742009E5B73 /* ClearedFaces2.png */,
+				E6B8FFA9179C8748009E5B73 /* ClearedFaces.png */,
 				E65ACF13178A1042009958FC /* foreground-hd.plist */,
 				E65ACF14178A1042009958FC /* foreground-hd.pvr.ccz */,
 				E65ACF15178A1042009958FC /* foreground.plist */,
@@ -928,6 +944,7 @@
 				E6B6F6D4178AE550007C6B92 /* ImageManipulation.xcodeproj */,
 				E6B6F6D7178AE550007C6B92 /* Resouces */,
 				E6B6F6DB178AE550007C6B92 /* Screenshot.png */,
+				E637C2EC179EACBD0041EC45 /* iPadStoryboard.storyboard */,
 			);
 			path = ImageManipulation;
 			sourceTree = "<group>";
@@ -961,7 +978,10 @@
 			children = (
 				E6B6F6D8178AE550007C6B92 /* frame.png */,
 				E6B6F6D9178AE550007C6B92 /* frame@2x.png */,
-				E6A4B62617918ACE005A2D6E /* faceMask.png */,
+				E613CCDB179AF4E5004A2B56 /* facemask.png */,
+				E6B8FFA4179C871E009E5B73 /* faceMaskv1.png */,
+				E6BD499717A15A5D00ED6A7E /* FaceMask2Transparent.png */,
+				E6BD499417A15A5500ED6A7E /* FaceMask2.png */,
 				E6A4B61C178F420C005A2D6E /* Robot-4.jpg */,
 				E6B6F6DA178AE550007C6B92 /* steve.png */,
 			);
@@ -971,9 +991,9 @@
 		E6E5DDFF178A05B100FFED67 /* WhackMole */ = {
 			isa = PBXGroup;
 			children = (
+				E65ACF0D178A1042009958FC /* Resources */,
 				E6E5DE00178A05B100FFED67 /* GameConfig.h */,
 				E6E5DE01178A05B100FFED67 /* HelloWorldScene.h */,
-				E65ACF0D178A1042009958FC /* Resources */,
 				E6E5DE02178A05B100FFED67 /* HelloWorldScene.m */,
 				E6E5DE03178A05B100FFED67 /* IntroScene.h */,
 				E6E5DE04178A05B100FFED67 /* IntroScene.m */,
@@ -981,8 +1001,6 @@
 				E6E5DE06178A05B100FFED67 /* photoCropper.m */,
 				E6E5DE07178A05B100FFED67 /* PhotoPicker.h */,
 				E6E5DE08178A05B100FFED67 /* PhotoPicker.m */,
-				E6E5DE0B178A05B100FFED67 /* WhackAMoleAppDelegate.h */,
-				E6E5DE0C178A05B100FFED67 /* WhackAMoleAppDelegate.m */,
 			);
 			name = WhackMole;
 			path = Classes;
@@ -1102,7 +1120,15 @@
 				E6B6F6E6178AE550007C6B92 /* steve.png in Resources */,
 				E6B6F6E7178AE550007C6B92 /* Screenshot.png in Resources */,
 				E6A4B61D178F420C005A2D6E /* Robot-4.jpg in Resources */,
-				E6A4B62717918ACE005A2D6E /* faceMask.png in Resources */,
+				E613CCDC179AF4E5004A2B56 /* facemask.png in Resources */,
+				E6B8FFA5179C871F009E5B73 /* faceMaskv1.png in Resources */,
+				E6B8FFA8179C8742009E5B73 /* ClearedFaces2.png in Resources */,
+				E6B8FFAA179C8748009E5B73 /* ClearedFaces.png in Resources */,
+				E637C2ED179EACBD0041EC45 /* iPadStoryboard.storyboard in Resources */,
+				E6BD499517A15A5500ED6A7E /* FaceMask2.png in Resources */,
+				E6BD499817A15A5D00ED6A7E /* FaceMask2Transparent.png in Resources */,
+				E6AE232917A3F25000315C08 /* T.png in Resources */,
+				E6AE232C17A3F2D500315C08 /* Thulpster.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1210,13 +1236,11 @@
 				6F1EF0EC13B5CA3D00DC78F6 /* main.m in Sources */,
 				6F1EF0EF13B5CA3D00DC78F6 /* AppDelegate.m in Sources */,
 				6F1EF0F213B5CA3D00DC78F6 /* RootViewController.m in Sources */,
-				6F1EF0F513B5CA3D00DC78F6 /* HelloWorldLayer.m in Sources */,
 				6F1EF0FE13B5CB3800DC78F6 /* RootViewControllerInterface.m in Sources */,
 				E6E5DE0D178A05B100FFED67 /* HelloWorldScene.m in Sources */,
 				E6E5DE0E178A05B100FFED67 /* IntroScene.m in Sources */,
 				E6E5DE0F178A05B100FFED67 /* photoCropper.m in Sources */,
 				E6E5DE10178A05B100FFED67 /* PhotoPicker.m in Sources */,
-				E6E5DE12178A05B100FFED67 /* WhackAMoleAppDelegate.m in Sources */,
 				E6B6F6E0178AE550007C6B92 /* ImageManipulationAppDelegate.m in Sources */,
 				E6B6F6E2178AE550007C6B92 /* PhotoBoothController.m in Sources */,
 			);
@@ -1294,6 +1318,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = ThrashingTime;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1311,6 +1336,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = ThrashingTime;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

@@ -251,15 +251,34 @@
     
     UIGraphicsEndImageContext();
 
+    // now mask the image
     
-     
+    UIImage *maskImage = [UIImage imageNamed:@"FaceMask2.png"];
+    UIImage *imageWithMask = [self maskAnImage:newImage withMask:maskImage];
     
-    NSData *pngData = UIImagePNGRepresentation(newImage);
+ 
+    // Scale the image to mole size
+    CGSize newSize = CGSizeMake(170.0, 230.0);
+    UIGraphicsBeginImageContext( newSize );
+    [imageWithMask drawInRect:CGRectMake(0,0,newSize.width,newSize.height)];
+    UIImage* scaledMaskedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    
+    NSData *pngData = UIImagePNGRepresentation(scaledMaskedImage);
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory
     NSString *filePath = [documentsPath stringByAppendingPathComponent:@"myMole.png"]; //Add the file name
     [pngData writeToFile:filePath atomically:YES]; //Write the file
     
+    
+    
+    // load custom mole
+    pngData = [NSData dataWithContentsOfFile:filePath];
+    pickedImage = [UIImage imageWithData:pngData];
+    [photoImage setImage:pickedImage];
+    
+  
 }
 
 
@@ -359,6 +378,13 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info {
  
 }
 */
+
+/*********************************************************************************************
+ *
+ *  This method returns a masked image, pass it the original image, the mask image, 
+ *  and a mask Rect
+ *********************************************************************************************/
+
 - (UIImage *)clipImage:(UIImage *)imageIn withMask:(UIImage *)maskIn atRect:(CGRect) maskRect
 {
     CGRect rect = CGRectMake(0, 0, imageIn.size.width, imageIn.size.height);
@@ -386,4 +412,26 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info {
     return newImage;
 }
 
+
+
+- (UIImage*) maskAnImage:(UIImage *)image withMask:(UIImage *)maskImage {
+    
+    CGImageRef maskRef = maskImage.CGImage;
+    
+    CGImageRef mask = CGImageMaskCreate(CGImageGetWidth(maskRef),
+                                        CGImageGetHeight(maskRef),
+                                        CGImageGetBitsPerComponent(maskRef),
+                                        CGImageGetBitsPerPixel(maskRef),
+                                        CGImageGetBytesPerRow(maskRef),
+                                        CGImageGetDataProvider(maskRef), NULL, false);
+    
+    CGImageRef maskedImageRef = CGImageCreateWithMask([image CGImage], mask);
+    UIImage *maskedImage = [UIImage imageWithCGImage:maskedImageRef];
+    
+    CGImageRelease(mask);
+    CGImageRelease(maskedImageRef);
+    
+    // returns new image with mask applied
+    return maskedImage;
+}
 @end
