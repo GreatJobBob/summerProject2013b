@@ -8,7 +8,38 @@
         <key>verbose</key>
         <false/>
         <key>autoSDSettings</key>
-        <array/>
+        <array>
+            <struct type="AutoSDSettings">
+                <key>scale</key>
+                <double>0.5</double>
+                <key>extension</key>
+                <string>-hd.</string>
+                <key>acceptFractionalValues</key>
+                <false/>
+                <key>maxTextureSize</key>
+                <QSize>
+                    <key>width</key>
+                    <int>2048</int>
+                    <key>height</key>
+                    <int>2048</int>
+                </QSize>
+            </struct>
+            <struct type="AutoSDSettings">
+                <key>scale</key>
+                <double>0.25</double>
+                <key>extension</key>
+                <string>.</string>
+                <key>acceptFractionalValues</key>
+                <false/>
+                <key>maxTextureSize</key>
+                <QSize>
+                    <key>width</key>
+                    <int>2048</int>
+                    <key>height</key>
+                    <int>2048</int>
+                </QSize>
+            </struct>
+        </array>
         <key>allowRotation</key>
         <true/>
         <key>quiet</key>
@@ -22,7 +53,7 @@
         <key>dataFormat</key>
         <string>cocos2d</string>
         <key>textureFileName</key>
-        <filename>T.png</filename>
+        <filename>ThulpEm-ipadhd.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>ditherType</key>
@@ -54,9 +85,9 @@
         <key>maxTextureSize</key>
         <QSize>
             <key>width</key>
-            <int>2048</int>
+            <int>4096</int>
             <key>height</key>
-            <int>2048</int>
+            <int>4096</int>
         </QSize>
         <key>fixedTextureSize</key>
         <QSize>
@@ -111,11 +142,11 @@
             <enum type="AndEngine::MagFilter">MagLinear</enum>
         </struct>
         <key>dataFileName</key>
-        <filename>Thulpster.plist</filename>
+        <filename>ThulpEm-ipadhd.plist</filename>
         <key>multiPack</key>
         <false/>
         <key>mainExtension</key>
-        <string></string>
+        <string>-ipadhd.</string>
         <key>forceIdenticalLayout</key>
         <false/>
         <key>outputFormat</key>
@@ -148,9 +179,14 @@
         </struct>
         <key>fileList</key>
         <array>
-            <filename>../../../../Desktop/moleHeadset200.png</filename>
-            <filename>../../../../Desktop/Grad200.png</filename>
-            <filename>../../../../Desktop/stock-illustration-23956614-reception.jpg</filename>
+            <filename>Headset400.png</filename>
+            <filename>Girl400.png</filename>
+            <filename>../../../../../../Volumes/BOOTCAMP/Users/bob/Desktop/Construction400.png</filename>
+            <filename>Construction400Face.png</filename>
+            <filename>singer400face.png</filename>
+            <filename>Headset400Face.png</filename>
+            <filename>thulpBoothBottom.png</filename>
+            <filename>thulpBoothTop.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

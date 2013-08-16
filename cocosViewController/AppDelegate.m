@@ -32,7 +32,7 @@
 		[CCDirector setDirectorType:kCCDirectorTypeDefault];
 	
 	
-	CCDirector *director = [CCDirector sharedDirector];
+	//CCDirector *director = [CCDirector sharedDirector];
 	
 	// Init the View Controller
 	viewController = [[RootViewController alloc] initWithNibName:nil bundle:nil];
@@ -40,7 +40,7 @@
     
     
     // i added bob k
-  //  window.rootViewController = viewController;
+    window.rootViewController = viewController;
     
     [window addSubview:viewController.view];
     [window makeKeyAndVisible];
@@ -112,7 +112,6 @@
     
     
     
-    
 	// Removes the startup flicker
 	[self removeStartupFlicker];
 	
@@ -125,6 +124,11 @@
     */
 
  
+    
+ 
+    
+    
+    
 }
 
 
@@ -165,13 +169,6 @@
 }
 
 
-- (void)bannerViewDidLoadAd:(ADBannerView *)banner
-{
-    NSLog(@"bannerViewDidLoadAd");
-    
-    [RootViewController moveBannerOnScreen];
-}
-
 
 
 
@@ -181,5 +178,7 @@
 	[window release];
 	[super dealloc];
 }
+
+
 
 @end

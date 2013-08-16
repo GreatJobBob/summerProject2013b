@@ -72,8 +72,9 @@
 {
     CGSize windowSize = [[CCDirector sharedDirector] winSize];
     
-    bannerView.frame = CGRectMake(0, (-1) * windowSize.height, 320, 50);
-    
+    //bannerView.frame = CGRectMake(0, (-1) * windowSize.height, 480, 32);
+    bannerView.frame = CGRectMake(0, (-1) * 800, 480, 32);
+
 }
 
 
@@ -84,7 +85,7 @@
 	[super viewDidLoad];
      
      
-     
+       
      
      /************************ iad *******************************************/
      
@@ -118,6 +119,10 @@
          
      }
      
+     //*******************************************************
+     
+     
+     
      // Try to use CADisplayLink director
      // if it fails (SDK < 3.1) use the default director
      if( ! [CCDirector setDirectorType:kCCDirectorTypeDisplayLink] )
@@ -140,10 +145,16 @@
      
      // attach the openglView to the director
      [director setOpenGLView:glView];
+  
      
+     
+     // ********* I commented this out, it turns Retina display support off ? ************************** bk
      //	// Enables High Res mode (Retina Display) on iPhone 4 and maintains low res on all other devices
      if( ! [director enableRetinaDisplay:YES] )
          CCLOG(@"Retina Display Not supported");
+   
+     
+     
      
      //
      // VERY IMPORTANT:
@@ -212,24 +223,32 @@
  }
 
 
--(void) moveBannerOnScreen
-{
-    
+-(void) moveBannerOnScreen{
+  
     [UIView beginAnimations:@"BannerViewIntro" context:NULL];
     
     bannerView.frame = CGRectZero;
     [UIView commitAnimations];
 }
 
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner{
+    
+    [self moveBannerOnScreen];
+}
 
 
-- (BOOL)shouldAutorotate {
+- (BOOL)shouldAutorotate   {
+    
+   
     
     // I added tbis method because shouldAutorotate replaces old method in ios 6 bk
     
-    UIInterfaceOrientation interfaceOrientation = [[UIDevice currentDevice] orientation];
+   UIInterfaceOrientation interfaceOrientation = [[UIDevice currentDevice] orientation];
     interfaceOrientation = UIInterfaceOrientationLandscapeRight;
-    
+  
+ 
+ 
+ 
     //
 	// There are 2 ways to support auto-rotation:
 	//  - The OpenGL / cocos2d way
@@ -349,6 +368,7 @@
 #if GAME_AUTOROTATION == kGameAutorotationUIViewController
 -(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
+    
 	//
 	// Assuming that the main window has the size of the screen
 	// BUG: This won't work if the EAGLView is not fullscreen
@@ -368,12 +388,43 @@
 	float contentScaleFactor = [director contentScaleFactor];
 	
 	if( contentScaleFactor != 1 ) {
-		rect.size.width *= contentScaleFactor;
-		rect.size.height *= contentScaleFactor;
+	//	rect.size.width *= contentScaleFactor;
+	//	rect.size.height *= contentScaleFactor;
 	}
 	glView.frame = rect;
 }
 #endif // GAME_AUTOROTATION == kGameAutorotationUIViewController
+
+
+-(void)viewWillLayoutSubviews{
+   
+    
+    // copied most of code from willRotatToInterfaceOrientation above so initial view scales correctly
+    
+    //
+	// Assuming that the main window has the size of the screen
+	// BUG: This won't work if the EAGLView is not fullscreen
+	///
+	CGRect screenRect = [[UIScreen mainScreen] bounds];
+	CGRect rect = CGRectZero;
+    
+	
+		rect.size = CGSizeMake( screenRect.size.height, screenRect.size.width );
+	
+	CCDirector *director = [CCDirector sharedDirector];
+	EAGLView *glView = [director openGLView];
+	float contentScaleFactor = [director contentScaleFactor];
+	
+	if( contentScaleFactor != 1 ) {
+	//	rect.size.width *= contentScaleFactor;
+	//	rect.size.height *= contentScaleFactor;
+	}
+	glView.frame = rect;
+     
+	}
+
+    
+
 
 
 - (void)didReceiveMemoryWarning {

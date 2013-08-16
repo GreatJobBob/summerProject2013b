@@ -65,6 +65,11 @@
 // on "init" you need to initialize your instance
 -(id) init
 {
+    
+    
+    
+    
+    
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super" return value
 	if( (self=[super init] )) {
@@ -76,64 +81,95 @@
         NSString *fgPlist = @"foreground.plist";
         NSString *sSheet = @"sprites.pvr.ccz";
         NSString *sPlist = @"sprites.plist";
+       
+        NSString *thulpEmSprites = @"ThulpEm.png";
+        NSString *thulpPlist = @"ThulpEm.plist";
+        
+        
+        
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
             bgSheet = @"background-hd.pvr.ccz";
             bgPlist = @"background-hd.plist";
             fgSheet = @"foreground-hd.pvr.ccz";
             fgPlist = @"foreground-hd.plist";
             sSheet = @"sprites-hd.pvr.ccz";
-            sPlist = @"sprites-hd.plist";            
+            sPlist = @"sprites-hd.plist";
+            
+             thulpEmSprites = @"ThulpEm-hd.png";
+             thulpPlist = @"ThulpEm-hd.plist";
+            
+            
+           // NSLog(@"scale = %f",[[UIScreen mainScreen] scale]);
+            
+            if ( [UIScreen mainScreen].scale == 2.0) {
+                thulpEmSprites = @"ThulpEm-ipadhd.png";
+                thulpPlist = @"ThulpEm-ipadhd.plist";
+                
+                
+            }
+            
         }
 
-        
-        
-        // Determine names of sprite sheets and plists to load
-        NSString *moleSheet = @"T.png";
-        NSString *molePlist = @"Thulpster.plist";
+     
         
         
         
         
         // Load background and foreground
-        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:bgPlist];       
-        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:fgPlist];
+        //[[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:bgPlist];
+       // [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:fgPlist];
+      //  [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:molePlist];
+   
+        
+        
+        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:thulpPlist];
 
+      
+        
+        
         // Add background
         CGSize winSize = [CCDirector sharedDirector].winSize;
-        CCSprite *dirt = [CCSprite spriteWithSpriteFrameName:@"bg_dirt.png"];
-        dirt.scale = 2.0;
+        
+        
+        // log size
+        NSLog(@"width = %f", winSize.width);
+       
+        /*
+        CCSprite *dirt = [CCSprite spriteWithSpriteFrameName:@"thulpHoles.png"];
+        dirt.scale = 1.0;
         dirt.position = ccp(winSize.width/2, winSize.height/2);
         [self addChild:dirt z:-2]; 
+         */
 
         // Add foreground
-        CCSprite *lower = [CCSprite spriteWithSpriteFrameName:@"grass_lower.png"];
-        lower.anchorPoint = ccp(0.5, 1);
+        CCSprite *lower = [CCSprite spriteWithSpriteFrameName:@"thulpBoothBottom.png"];
+        //lower.anchorPoint = ccp(0.5, 1);
         lower.position = ccp(winSize.width/2, winSize.height/2);
         [self addChild:lower z:1];
 
-        CCSprite *upper = [CCSprite spriteWithSpriteFrameName:@"grass_upper.png"];
-        upper.anchorPoint = ccp(0.5, 0);
+        CCSprite *upper = [CCSprite spriteWithSpriteFrameName:@"thulpBoothTop.png"];
+      //  upper.anchorPoint = ccp(0.5, 0);
         upper.position = ccp(winSize.width/2, winSize.height/2);
         [self addChild:upper z:-1];
 
         // Load sprites
-        CCSpriteBatchNode *spriteNode = [CCSpriteBatchNode batchNodeWithFile:moleSheet];
+        CCSpriteBatchNode *spriteNode = [CCSpriteBatchNode batchNodeWithFile:thulpEmSprites];
        
         [self addChild:spriteNode z:0];
-        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:molePlist];
+        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:thulpPlist];
 
         moles = [[NSMutableArray alloc] init];
 
 
-        CCSprite *mole1 = [CCSprite spriteWithSpriteFrameName:@"Grad200.png"];
-        mole1.position = [self convertPoint:ccp(385, 85)];
+        CCSprite *mole1 = [CCSprite spriteWithSpriteFrameName:@"singer400face.png"];
+        mole1.position = [self convertPoint:ccp(370, 30)];
         [spriteNode addChild:mole1];
         [moles addObject:mole1];
-
+        
  
  
-        CCSprite *mole2 = [CCSprite spriteWithSpriteFrameName:@"Grad200.png"];
-        mole2.position = [self convertPoint:ccp(240, 85)];
+        CCSprite *mole2 = [CCSprite spriteWithSpriteFrameName:@"Construction400Face.png"];
+        mole2.position = [self convertPoint:ccp(240, 30)];
         [spriteNode addChild:mole2];
         [moles addObject:mole2];
 
@@ -159,18 +195,24 @@
         }
 
         
+        // Images are stored in larger size so scale to fit
+        myMole.scale=(.55 * [UIScreen mainScreen].scale);
+        
+        myMole.position = [self convertPoint:ccp(34, 60)];
+        
         
         // Load sprites
-        CCSpriteBatchNode *spriteNodeA = [CCSpriteBatchNode batchNodeWithFile:moleSheet];
+        CCSpriteBatchNode *spriteNodeA = [CCSpriteBatchNode batchNodeWithFile:thulpEmSprites];
         
         [self addChild:spriteNodeA z:1];
-        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:molePlist];
+        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:thulpPlist];
        
        
-        CCSprite *moleA = [CCSprite spriteWithSpriteFrameName:@"moleHeadset200.png"];
+        CCSprite *moleA = [CCSprite spriteWithSpriteFrameName:@"Headset400.png"];
        
         
-        moleA.position = [self convertPoint:ccp(85, 35)];
+        moleA.position = [self convertPoint:ccp(110,30)];
+        
         //[spriteNodeA addChild:moleA];
         [moleA addChild:myMole z:-1];
        
@@ -217,7 +259,7 @@
        
         
         
-        myMole.position = [self convertPoint:ccp(105, 203)];
+      
        
         
         
@@ -249,7 +291,7 @@
         // Preload sound effects
         [[SimpleAudioEngine sharedEngine] preloadEffect:@"laugh.caf"];
         [[SimpleAudioEngine sharedEngine] preloadEffect:@"ow.caf"];
-        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"whack.caf" loop:YES];
+        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"ThulpEm1.aiff" loop:YES];
         
         CCMenu * myMenu = [CCMenu menuWithItems:nil];
         CCMenuItemImage *menuItem1 = [CCMenuItemImage itemFromNormalImage: @"Icon@2x.png"
@@ -277,10 +319,14 @@
 
 
 
+
+
+
+
 - (void)setTappable:(id)sender {
     CCSprite *mole = (CCSprite *)sender;    
     [mole setUserData:TRUE];
-    [[SimpleAudioEngine sharedEngine] playEffect:@"laugh.caf"];
+   // [[SimpleAudioEngine sharedEngine] playEffect:@"laugh.caf"];
 }
 
 - (void)unsetTappable:(id)sender {
@@ -295,7 +341,7 @@
  //   [mole setDisplayFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"mole_1.png"]];
     
     // Pop mole
-    CCMoveBy *moveUp = [CCMoveBy actionWithDuration:0.3 position:ccp(0, 150)];   // changing this to 200 makes the game a lot different bk
+    CCMoveBy *moveUp = [CCMoveBy actionWithDuration:0.3 position:ccp(0, mole.contentSize.height)];   // changing this to 200 makes the game a lot different bk
     CCCallFunc *setTappable = [CCCallFuncN actionWithTarget:self selector:@selector(setTappable:)];
     CCEaseInOut *easeMoveUp = [CCEaseInOut actionWithAction:moveUp rate:6.0];
     CCAction *wait = [CCMoveBy actionWithDuration:0.5 position:ccp(0,0)];
@@ -336,10 +382,12 @@
             score+= 10;
             
             [mole stopAllActions];
-            CCAnimate *hit = [CCAnimate actionWithAnimation:hitAnim restoreOriginalFrame:NO];
+          //  CCAnimate *hit = [CCAnimate actionWithAnimation:hitAnim restoreOriginalFrame:NO];
+            //CCMoveBy *moveDown = [CCMoveBy actionWithDuration:0.2 position:ccp(0, -mole.contentSize.height)];
             CCMoveBy *moveDown = [CCMoveBy actionWithDuration:0.2 position:ccp(0, -mole.contentSize.height)];
+                                                                               
             CCEaseInOut *easeMoveDown = [CCEaseInOut actionWithAction:moveDown rate:3.0];
-            [mole runAction:[CCSequence actions:hit, easeMoveDown, nil]];
+            [mole runAction:[CCSequence actions: easeMoveDown, nil]];
         }
     }    
     return TRUE;

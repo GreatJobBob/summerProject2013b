@@ -123,8 +123,12 @@
         
         
 	}
+    
+     
 	return self;
 }
+
+
 
 
 - (float)convertFontSize:(float)fontSize {
@@ -150,6 +154,7 @@
 - (void)manipulateImage:(UIButton*)sender {
     [[RootViewControllerInterface rootViewControllerInterfaceSharedInstance] manipulateImage];
 }
+
 
 
 @end

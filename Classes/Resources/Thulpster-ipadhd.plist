@@ -7,67 +7,67 @@
             <key>Girl400.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{902,163},{100,158}}</string>
+                <string>{{3590,638},{400,633}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{100,158}}</string>
+                <string>{{0,0},{400,633}}</string>
                 <key>sourceSize</key>
-                <string>{100,158}</string>
+                <string>{400,633}</string>
             </dict>
             <key>Headset400.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{902,2},{100,159}}</string>
+                <string>{{3590,2},{400,634}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{100,159}}</string>
+                <string>{{0,0},{400,634}}</string>
                 <key>sourceSize</key>
-                <string>{100,159}</string>
+                <string>{400,634}</string>
             </dict>
             <key>thulpBoothBottom.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,388},{512,384}}</string>
+                <string>{{2,1540},{2048,1536}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{512,384}}</string>
+                <string>{{0,0},{2048,1536}}</string>
                 <key>sourceSize</key>
-                <string>{512,384}</string>
+                <string>{2048,1536}</string>
             </dict>
             <key>thulpBoothTop.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{516,2},{512,384}}</string>
+                <string>{{2052,2},{2048,1536}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{512,384}}</string>
+                <string>{{0,0},{2048,1536}}</string>
                 <key>sourceSize</key>
-                <string>{512,384}</string>
+                <string>{2048,1536}</string>
             </dict>
             <key>thulpHoles.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{512,384}}</string>
+                <string>{{2,2},{2048,1536}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{512,384}}</string>
+                <string>{{0,0},{2048,1536}}</string>
                 <key>sourceSize</key>
-                <string>{512,384}</string>
+                <string>{2048,1536}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -75,13 +75,13 @@
             <key>format</key>
             <integer>2</integer>
             <key>realTextureFileName</key>
-            <string>T.png</string>
+            <string>T-ipadhd.png</string>
             <key>size</key>
-            <string>{1024,1024}</string>
+            <string>{4096,4096}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:eb3a414c2268dd6beadb48caacd389b0:1/1$</string>
+            <string>$TexturePacker:SmartUpdate:ade060e16c5bffedc191f61f5144d373:1/1$</string>
             <key>textureFileName</key>
-            <string>T.png</string>
+            <string>T-ipadhd.png</string>
         </dict>
     </dict>
 </plist>

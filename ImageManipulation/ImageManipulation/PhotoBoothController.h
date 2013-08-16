@@ -11,7 +11,7 @@
 
 
 
-@interface PhotoBoothController : UIViewController <UIGestureRecognizerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
+@interface PhotoBoothController : UIViewController <UIGestureRecognizerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPopoverControllerDelegate> {
    
     CGFloat _lastScale;
 	CGFloat _lastRotation;  
@@ -19,15 +19,13 @@
 	CGFloat _firstY;
     UIImagePickerController *picker;
     UIImage *pickedImage;
-    UIImageView *photoImage;
+    //UIImageView *photoImage;
     UIView *canvas;    
     CAShapeLayer *_marque;
-    
-    IBOutlet UIImageView *faceImageView2;
-    IBOutlet UIImageView *faceImage;
-    IBOutlet UIView *faceImageView;
-    IBOutlet UIImageView * selectedImage;
+    UIPopoverController *popover;
  
+    IBOutlet UIImageView * photoImage;
+    IBOutlet UIImageView * faceMaskImage;
 }
 
 @property (nonatomic, retain) IBOutlet UIView *canvas;
@@ -36,6 +34,9 @@
 @property (nonatomic, retain) UIImageView * faceImageView2;
 @property (retain, nonatomic) IBOutlet UIButton *CloseView;
 @property (retain, nonatomic) IBOutlet UIButton *ChooseButton;
+@property (retain, nonatomic) IBOutlet UIPopoverController *popover;
+@property (nonatomic, retain) UIImageView * faceMaskImage;
+
 
 - (IBAction)CloseClicked:(id)sender;
 - (IBAction)ChooseButtonClicked:(id)sender;

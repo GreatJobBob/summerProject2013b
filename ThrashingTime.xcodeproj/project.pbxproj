@@ -124,6 +124,10 @@
 		6F1EF0FE13B5CB3800DC78F6 /* RootViewControllerInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1EF0FD13B5CB3800DC78F6 /* RootViewControllerInterface.m */; };
 		6F1EF10613B5DDE800DC78F6 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1EF10513B5DDE800DC78F6 /* MessageUI.framework */; };
 		E637C2ED179EACBD0041EC45 /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E637C2EC179EACBD0041EC45 /* iPadStoryboard.storyboard */; };
+		E637E78617BD2BDB0054E111 /* wallpaper-hd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E637E78517BD2BDB0054E111 /* wallpaper-hd.jpg */; };
+		E637E78917BD34BE0054E111 /* Icon-Small@2x-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E637E78817BD34BE0054E111 /* Icon-Small@2x-hd.png */; };
+		E637E78B17BD35150054E111 /* Icon-Small-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E637E78A17BD35140054E111 /* Icon-Small-hd.png */; };
+		E637E78D17BD35300054E111 /* Icon@2x-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E637E78C17BD35300054E111 /* Icon@2x-hd.png */; };
 		E65ACF2B178A1042009958FC /* background-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E65ACF0E178A1042009958FC /* background-hd.plist */; };
 		E65ACF2C178A1042009958FC /* background-hd.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = E65ACF0F178A1042009958FC /* background-hd.pvr.ccz */; };
 		E65ACF2D178A1042009958FC /* background.plist in Resources */ = {isa = PBXBuildFile; fileRef = E65ACF10178A1042009958FC /* background.plist */; };
@@ -153,10 +157,48 @@
 		E65ACF45178A1042009958FC /* sprites.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = E65ACF28178A1042009958FC /* sprites.pvr.ccz */; };
 		E65ACF46178A1042009958FC /* wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E65ACF29178A1042009958FC /* wallpaper.jpg */; };
 		E65ACF47178A1042009958FC /* whack.caf in Resources */ = {isa = PBXBuildFile; fileRef = E65ACF2A178A1042009958FC /* whack.caf */; };
+		E66DE39B17B7F3020095B6C1 /* thulpHoles.png in Resources */ = {isa = PBXBuildFile; fileRef = E66DE39A17B7F3020095B6C1 /* thulpHoles.png */; };
+		E6760CAE17B92F6E00196B91 /* ThulpEm1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6760CAD17B92F6E00196B91 /* ThulpEm1.wav */; };
+		E6760CB017B93B5400196B91 /* moleHeadset200-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E6760CAF17B93B5300196B91 /* moleHeadset200-hd.png */; };
+		E691C2C017BE4F4B007DDC97 /* thulpBoothTop.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2BF17BE4F4B007DDC97 /* thulpBoothTop.png */; };
+		E691C2C217BE4F5A007DDC97 /* thulpBoothBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2C117BE4F5A007DDC97 /* thulpBoothBottom.png */; };
+		E691C2C417BE5013007DDC97 /* singer400face.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2C317BE5013007DDC97 /* singer400face.png */; };
+		E691C2C617BE5025007DDC97 /* Headset400Face.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2C517BE5025007DDC97 /* Headset400Face.png */; };
+		E691C2C817BE5035007DDC97 /* Construction400Face.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2C717BE5035007DDC97 /* Construction400Face.png */; };
+		E691C2CA17BE5040007DDC97 /* Construction400.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2C917BE5040007DDC97 /* Construction400.png */; };
+		E691C2D217BE5128007DDC97 /* ThulpEm.plist in Resources */ = {isa = PBXBuildFile; fileRef = E691C2CB17BE5128007DDC97 /* ThulpEm.plist */; };
+		E691C2D317BE5128007DDC97 /* ThulpEm.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2CC17BE5128007DDC97 /* ThulpEm.png */; };
+		E691C2D417BE5128007DDC97 /* ThulpEm-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E691C2CD17BE5128007DDC97 /* ThulpEm-hd.plist */; };
+		E691C2D517BE5128007DDC97 /* ThulpEm-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2CE17BE5128007DDC97 /* ThulpEm-hd.png */; };
+		E691C2D617BE5128007DDC97 /* ThulpEm-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E691C2CF17BE5128007DDC97 /* ThulpEm-ipadhd.plist */; };
+		E691C2D717BE5128007DDC97 /* ThulpEm-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2D017BE5128007DDC97 /* ThulpEm-ipadhd.png */; };
+		E691C2D817BE5128007DDC97 /* Thulpster.tps in Resources */ = {isa = PBXBuildFile; fileRef = E691C2D117BE5128007DDC97 /* Thulpster.tps */; };
+		E691C2E017BE52C0007DDC97 /* ThulpEm.plist in Resources */ = {isa = PBXBuildFile; fileRef = E691C2D917BE52BF007DDC97 /* ThulpEm.plist */; };
+		E691C2E117BE52C0007DDC97 /* ThulpEm.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2DA17BE52BF007DDC97 /* ThulpEm.png */; };
+		E691C2E217BE52C0007DDC97 /* ThulpEm-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E691C2DB17BE52BF007DDC97 /* ThulpEm-hd.plist */; };
+		E691C2E317BE52C0007DDC97 /* ThulpEm-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2DC17BE52BF007DDC97 /* ThulpEm-hd.png */; };
+		E691C2E417BE52C0007DDC97 /* ThulpEm-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E691C2DD17BE52C0007DDC97 /* ThulpEm-ipadhd.plist */; };
+		E691C2E517BE52C0007DDC97 /* ThulpEm-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2DE17BE52C0007DDC97 /* ThulpEm-ipadhd.png */; };
+		E691C2E617BE52C0007DDC97 /* Thulpster.tps in Resources */ = {isa = PBXBuildFile; fileRef = E691C2DF17BE52C0007DDC97 /* Thulpster.tps */; };
 		E693F52017A7EE90008A51EA /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E693F51F17A7EE90008A51EA /* iAd.framework */; };
+		E695F7C017B982B400AC3086 /* faceMask400-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E695F7BF17B982B400AC3086 /* faceMask400-hd.png */; };
+		E695F7C317B98CD200AC3086 /* ThulpEm1.aiff in Resources */ = {isa = PBXBuildFile; fileRef = E695F7C217B98CD200AC3086 /* ThulpEm1.aiff */; };
+		E698314517BD628900B251EA /* ThulpEm.plist in Resources */ = {isa = PBXBuildFile; fileRef = E698313E17BD628900B251EA /* ThulpEm.plist */; };
+		E698314617BD628900B251EA /* ThulpEm.png in Resources */ = {isa = PBXBuildFile; fileRef = E698313F17BD628900B251EA /* ThulpEm.png */; };
+		E698314717BD628900B251EA /* ThulpEm-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E698314017BD628900B251EA /* ThulpEm-hd.plist */; };
+		E698314817BD628900B251EA /* ThulpEm-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E698314117BD628900B251EA /* ThulpEm-hd.png */; };
+		E698314917BD628900B251EA /* ThulpEm-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E698314217BD628900B251EA /* ThulpEm-ipadhd.plist */; };
+		E698314A17BD628900B251EA /* ThulpEm-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = E698314317BD628900B251EA /* ThulpEm-ipadhd.png */; };
+		E698314B17BD628900B251EA /* Thulpster.tps in Resources */ = {isa = PBXBuildFile; fileRef = E698314417BD628900B251EA /* Thulpster.tps */; };
 		E6A4B61D178F420C005A2D6E /* Robot-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6A4B61C178F420C005A2D6E /* Robot-4.jpg */; };
+		E6A995B817BD00A200ED0CF7 /* Girl400Mask-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E6A995B717BD00A200ED0CF7 /* Girl400Mask-hd.png */; };
+		E6A995BB17BD00AE00ED0CF7 /* Girl400MaskBW-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E6A995BA17BD00AE00ED0CF7 /* Girl400MaskBW-hd.png */; };
+		E6A995C117BD13D300ED0CF7 /* T-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E6A995BC17BD13D200ED0CF7 /* T-hd.png */; };
+		E6A995C217BD13D300ED0CF7 /* Thulpster-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6A995BD17BD13D200ED0CF7 /* Thulpster-hd.plist */; };
+		E6A995C317BD13D300ED0CF7 /* T-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = E6A995BE17BD13D200ED0CF7 /* T-ipadhd.png */; };
+		E6A995C417BD13D300ED0CF7 /* Thulpster-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6A995BF17BD13D200ED0CF7 /* Thulpster-ipadhd.plist */; };
+		E6A995C517BD13D300ED0CF7 /* Thulpster.tps in Resources */ = {isa = PBXBuildFile; fileRef = E6A995C017BD13D300ED0CF7 /* Thulpster.tps */; };
 		E6AE232917A3F25000315C08 /* T.png in Resources */ = {isa = PBXBuildFile; fileRef = E6AE232817A3F25000315C08 /* T.png */; };
-		E6AE232C17A3F2D500315C08 /* Thulpster.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6AE232B17A3F2D500315C08 /* Thulpster.plist */; };
 		E6B6F6DC178AE550007C6B92 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B6F6C6178AE550007C6B92 /* Default-568h@2x.png */; };
 		E6B6F6DD178AE550007C6B92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6B6F6C8178AE550007C6B92 /* InfoPlist.strings */; };
 		E6B6F6DE178AE550007C6B92 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6B6F6CA178AE550007C6B92 /* MainWindow.xib */; };
@@ -168,11 +210,20 @@
 		E6B6F6E5178AE550007C6B92 /* frame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B6F6D9178AE550007C6B92 /* frame@2x.png */; };
 		E6B6F6E6178AE550007C6B92 /* steve.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B6F6DA178AE550007C6B92 /* steve.png */; };
 		E6B6F6E7178AE550007C6B92 /* Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B6F6DB178AE550007C6B92 /* Screenshot.png */; };
+		E6B7FDF817B97134005EC738 /* Headset400.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B7FDF717B97134005EC738 /* Headset400.png */; };
 		E6B8FFA5179C871F009E5B73 /* faceMaskv1.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B8FFA4179C871E009E5B73 /* faceMaskv1.png */; };
 		E6B8FFA8179C8742009E5B73 /* ClearedFaces2.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B8FFA7179C8742009E5B73 /* ClearedFaces2.png */; };
 		E6B8FFAA179C8748009E5B73 /* ClearedFaces.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B8FFA9179C8748009E5B73 /* ClearedFaces.png */; };
 		E6BD499517A15A5500ED6A7E /* FaceMask2.png in Resources */ = {isa = PBXBuildFile; fileRef = E6BD499417A15A5500ED6A7E /* FaceMask2.png */; };
 		E6BD499817A15A5D00ED6A7E /* FaceMask2Transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = E6BD499717A15A5D00ED6A7E /* FaceMask2Transparent.png */; };
+		E6C311F517B96E0100CC2634 /* Girl400.png in Resources */ = {isa = PBXBuildFile; fileRef = E6C311F417B96E0100CC2634 /* Girl400.png */; };
+		E6C5D85017BCF11C0006860E /* faceMask400-a.png in Resources */ = {isa = PBXBuildFile; fileRef = E6C5D84F17BCF11C0006860E /* faceMask400-a.png */; };
+		E6D9A2AC17BD215400E9AC3D /* ThulpEm.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6D9A2A617BD215300E9AC3D /* ThulpEm.plist */; };
+		E6D9A2AD17BD215400E9AC3D /* ThulpEm.png in Resources */ = {isa = PBXBuildFile; fileRef = E6D9A2A717BD215300E9AC3D /* ThulpEm.png */; };
+		E6D9A2AE17BD215400E9AC3D /* ThulpEm-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6D9A2A817BD215300E9AC3D /* ThulpEm-hd.plist */; };
+		E6D9A2AF17BD215400E9AC3D /* ThulpEm-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E6D9A2A917BD215400E9AC3D /* ThulpEm-hd.png */; };
+		E6D9A2B017BD215400E9AC3D /* ThulpEm-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6D9A2AA17BD215400E9AC3D /* ThulpEm-ipadhd.plist */; };
+		E6D9A2B117BD215400E9AC3D /* ThulpEm-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = E6D9A2AB17BD215400E9AC3D /* ThulpEm-ipadhd.png */; };
 		E6E5DE0D178A05B100FFED67 /* HelloWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E5DE02178A05B100FFED67 /* HelloWorldScene.m */; };
 		E6E5DE0E178A05B100FFED67 /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E5DE04178A05B100FFED67 /* IntroScene.m */; };
 		E6E5DE0F178A05B100FFED67 /* photoCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E5DE06178A05B100FFED67 /* photoCropper.m */; };
@@ -426,6 +477,10 @@
 		6F1EF0FD13B5CB3800DC78F6 /* RootViewControllerInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewControllerInterface.m; sourceTree = "<group>"; };
 		6F1EF10513B5DDE800DC78F6 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		E637C2EC179EACBD0041EC45 /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
+		E637E78517BD2BDB0054E111 /* wallpaper-hd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wallpaper-hd.jpg"; sourceTree = "<group>"; };
+		E637E78817BD34BE0054E111 /* Icon-Small@2x-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x-hd.png"; sourceTree = "<group>"; };
+		E637E78A17BD35140054E111 /* Icon-Small-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-hd.png"; sourceTree = "<group>"; };
+		E637E78C17BD35300054E111 /* Icon@2x-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x-hd.png"; sourceTree = "<group>"; };
 		E65ACF0E178A1042009958FC /* background-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "background-hd.plist"; sourceTree = "<group>"; };
 		E65ACF0F178A1042009958FC /* background-hd.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-hd.pvr.ccz"; sourceTree = "<group>"; };
 		E65ACF10178A1042009958FC /* background.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = background.plist; sourceTree = "<group>"; };
@@ -455,10 +510,49 @@
 		E65ACF28178A1042009958FC /* sprites.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = sprites.pvr.ccz; sourceTree = "<group>"; };
 		E65ACF29178A1042009958FC /* wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper.jpg; sourceTree = "<group>"; };
 		E65ACF2A178A1042009958FC /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whack.caf; sourceTree = "<group>"; };
+		E66DE39A17B7F3020095B6C1 /* thulpHoles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thulpHoles.png; sourceTree = "<group>"; };
+		E6760CAD17B92F6E00196B91 /* ThulpEm1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ThulpEm1.wav; sourceTree = "<group>"; };
+		E6760CAF17B93B5300196B91 /* moleHeadset200-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "moleHeadset200-hd.png"; sourceTree = "<group>"; };
+		E6760CB317B9529000196B91 /* ThulpEm1.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThulpEm1.aac; sourceTree = "<group>"; };
+		E691C2BF17BE4F4B007DDC97 /* thulpBoothTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thulpBoothTop.png; sourceTree = "<group>"; };
+		E691C2C117BE4F5A007DDC97 /* thulpBoothBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thulpBoothBottom.png; sourceTree = "<group>"; };
+		E691C2C317BE5013007DDC97 /* singer400face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singer400face.png; sourceTree = "<group>"; };
+		E691C2C517BE5025007DDC97 /* Headset400Face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Headset400Face.png; sourceTree = "<group>"; };
+		E691C2C717BE5035007DDC97 /* Construction400Face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Construction400Face.png; sourceTree = "<group>"; };
+		E691C2C917BE5040007DDC97 /* Construction400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Construction400.png; path = ../../../../../../Volumes/BOOTCAMP/Users/bob/Desktop/Construction400.png; sourceTree = "<group>"; };
+		E691C2CB17BE5128007DDC97 /* ThulpEm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ThulpEm.plist; sourceTree = "<group>"; };
+		E691C2CC17BE5128007DDC97 /* ThulpEm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThulpEm.png; sourceTree = "<group>"; };
+		E691C2CD17BE5128007DDC97 /* ThulpEm-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ThulpEm-hd.plist"; sourceTree = "<group>"; };
+		E691C2CE17BE5128007DDC97 /* ThulpEm-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThulpEm-hd.png"; sourceTree = "<group>"; };
+		E691C2CF17BE5128007DDC97 /* ThulpEm-ipadhd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ThulpEm-ipadhd.plist"; sourceTree = "<group>"; };
+		E691C2D017BE5128007DDC97 /* ThulpEm-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThulpEm-ipadhd.png"; sourceTree = "<group>"; };
+		E691C2D117BE5128007DDC97 /* Thulpster.tps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Thulpster.tps; sourceTree = "<group>"; };
+		E691C2D917BE52BF007DDC97 /* ThulpEm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ThulpEm.plist; sourceTree = "<group>"; };
+		E691C2DA17BE52BF007DDC97 /* ThulpEm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThulpEm.png; sourceTree = "<group>"; };
+		E691C2DB17BE52BF007DDC97 /* ThulpEm-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ThulpEm-hd.plist"; sourceTree = "<group>"; };
+		E691C2DC17BE52BF007DDC97 /* ThulpEm-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThulpEm-hd.png"; sourceTree = "<group>"; };
+		E691C2DD17BE52C0007DDC97 /* ThulpEm-ipadhd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ThulpEm-ipadhd.plist"; sourceTree = "<group>"; };
+		E691C2DE17BE52C0007DDC97 /* ThulpEm-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThulpEm-ipadhd.png"; sourceTree = "<group>"; };
+		E691C2DF17BE52C0007DDC97 /* Thulpster.tps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Thulpster.tps; sourceTree = "<group>"; };
 		E693F51F17A7EE90008A51EA /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		E695F7BF17B982B400AC3086 /* faceMask400-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "faceMask400-hd.png"; path = "../../Classes/Resources/faceMask400-hd.png"; sourceTree = "<group>"; };
+		E695F7C217B98CD200AC3086 /* ThulpEm1.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = ThulpEm1.aiff; sourceTree = "<group>"; };
+		E698313E17BD628900B251EA /* ThulpEm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ThulpEm.plist; sourceTree = "<group>"; };
+		E698313F17BD628900B251EA /* ThulpEm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThulpEm.png; sourceTree = "<group>"; };
+		E698314017BD628900B251EA /* ThulpEm-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ThulpEm-hd.plist"; sourceTree = "<group>"; };
+		E698314117BD628900B251EA /* ThulpEm-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThulpEm-hd.png"; sourceTree = "<group>"; };
+		E698314217BD628900B251EA /* ThulpEm-ipadhd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ThulpEm-ipadhd.plist"; sourceTree = "<group>"; };
+		E698314317BD628900B251EA /* ThulpEm-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThulpEm-ipadhd.png"; sourceTree = "<group>"; };
+		E698314417BD628900B251EA /* Thulpster.tps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Thulpster.tps; sourceTree = "<group>"; };
 		E6A4B61C178F420C005A2D6E /* Robot-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Robot-4.jpg"; sourceTree = "<group>"; };
+		E6A995B717BD00A200ED0CF7 /* Girl400Mask-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Girl400Mask-hd.png"; sourceTree = "<group>"; };
+		E6A995BA17BD00AE00ED0CF7 /* Girl400MaskBW-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Girl400MaskBW-hd.png"; sourceTree = "<group>"; };
+		E6A995BC17BD13D200ED0CF7 /* T-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "T-hd.png"; sourceTree = "<group>"; };
+		E6A995BD17BD13D200ED0CF7 /* Thulpster-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Thulpster-hd.plist"; sourceTree = "<group>"; };
+		E6A995BE17BD13D200ED0CF7 /* T-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "T-ipadhd.png"; sourceTree = "<group>"; };
+		E6A995BF17BD13D200ED0CF7 /* Thulpster-ipadhd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Thulpster-ipadhd.plist"; sourceTree = "<group>"; };
+		E6A995C017BD13D300ED0CF7 /* Thulpster.tps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Thulpster.tps; sourceTree = "<group>"; };
 		E6AE232817A3F25000315C08 /* T.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = T.png; sourceTree = "<group>"; };
-		E6AE232B17A3F2D500315C08 /* Thulpster.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Thulpster.plist; sourceTree = "<group>"; };
 		E6B6F6C4178A2A7C007C6B92 /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		E6B6F6C6178AE550007C6B92 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E6B6F6C9178AE550007C6B92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -475,11 +569,20 @@
 		E6B6F6D9178AE550007C6B92 /* frame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "frame@2x.png"; sourceTree = "<group>"; };
 		E6B6F6DA178AE550007C6B92 /* steve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = steve.png; sourceTree = "<group>"; };
 		E6B6F6DB178AE550007C6B92 /* Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot.png; sourceTree = "<group>"; };
+		E6B7FDF717B97134005EC738 /* Headset400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Headset400.png; sourceTree = "<group>"; };
 		E6B8FFA4179C871E009E5B73 /* faceMaskv1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faceMaskv1.png; sourceTree = "<group>"; };
 		E6B8FFA7179C8742009E5B73 /* ClearedFaces2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClearedFaces2.png; sourceTree = "<group>"; };
 		E6B8FFA9179C8748009E5B73 /* ClearedFaces.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClearedFaces.png; sourceTree = "<group>"; };
 		E6BD499417A15A5500ED6A7E /* FaceMask2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FaceMask2.png; sourceTree = "<group>"; };
 		E6BD499717A15A5D00ED6A7E /* FaceMask2Transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FaceMask2Transparent.png; sourceTree = "<group>"; };
+		E6C311F417B96E0100CC2634 /* Girl400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Girl400.png; sourceTree = "<group>"; };
+		E6C5D84F17BCF11C0006860E /* faceMask400-a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "faceMask400-a.png"; sourceTree = "<group>"; };
+		E6D9A2A617BD215300E9AC3D /* ThulpEm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ThulpEm.plist; sourceTree = "<group>"; };
+		E6D9A2A717BD215300E9AC3D /* ThulpEm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThulpEm.png; sourceTree = "<group>"; };
+		E6D9A2A817BD215300E9AC3D /* ThulpEm-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ThulpEm-hd.plist"; sourceTree = "<group>"; };
+		E6D9A2A917BD215400E9AC3D /* ThulpEm-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThulpEm-hd.png"; sourceTree = "<group>"; };
+		E6D9A2AA17BD215400E9AC3D /* ThulpEm-ipadhd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ThulpEm-ipadhd.plist"; sourceTree = "<group>"; };
+		E6D9A2AB17BD215400E9AC3D /* ThulpEm-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThulpEm-ipadhd.png"; sourceTree = "<group>"; };
 		E6E5DE00178A05B100FFED67 /* GameConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		E6E5DE01178A05B100FFED67 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
 		E6E5DE02178A05B100FFED67 /* HelloWorldScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldScene.m; sourceTree = "<group>"; };
@@ -897,39 +1000,87 @@
 		E65ACF0D178A1042009958FC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E6AE232B17A3F2D500315C08 /* Thulpster.plist */,
-				E6AE232817A3F25000315C08 /* T.png */,
 				E65ACF0E178A1042009958FC /* background-hd.plist */,
 				E65ACF0F178A1042009958FC /* background-hd.pvr.ccz */,
 				E65ACF10178A1042009958FC /* background.plist */,
 				E65ACF11178A1042009958FC /* background.pvr.ccz */,
-				E65ACF12178A1042009958FC /* Default.png */,
-				E6B8FFA7179C8742009E5B73 /* ClearedFaces2.png */,
 				E6B8FFA9179C8748009E5B73 /* ClearedFaces.png */,
+				E6B8FFA7179C8742009E5B73 /* ClearedFaces2.png */,
+				E65ACF12178A1042009958FC /* Default.png */,
 				E65ACF13178A1042009958FC /* foreground-hd.plist */,
 				E65ACF14178A1042009958FC /* foreground-hd.pvr.ccz */,
 				E65ACF15178A1042009958FC /* foreground.plist */,
 				E65ACF16178A1042009958FC /* foreground.pvr.ccz */,
 				E65ACF17178A1042009958FC /* fps_images.png */,
+				E6C311F417B96E0100CC2634 /* Girl400.png */,
+				E6B7FDF717B97134005EC738 /* Headset400.png */,
 				E65ACF18178A1042009958FC /* hitAnim.plist */,
 				E65ACF19178A1042009958FC /* Icon-72.png */,
 				E65ACF1A178A1042009958FC /* Icon-Small-50.png */,
+				E637E78A17BD35140054E111 /* Icon-Small-hd.png */,
 				E65ACF1B178A1042009958FC /* Icon-Small.png */,
+				E637E78817BD34BE0054E111 /* Icon-Small@2x-hd.png */,
 				E65ACF1C178A1042009958FC /* Icon-Small@2x.png */,
 				E65ACF1D178A1042009958FC /* Icon.png */,
+				E637E78C17BD35300054E111 /* Icon@2x-hd.png */,
 				E65ACF1E178A1042009958FC /* Icon@2x.png */,
 				E65ACF1F178A1042009958FC /* Info.plist2 */,
 				E65ACF20178A1042009958FC /* ItunesArtwork */,
 				E65ACF21178A1042009958FC /* laugh.caf */,
 				E65ACF22178A1042009958FC /* laughAnim.plist */,
+				E6760CAF17B93B5300196B91 /* moleHeadset200-hd.png */,
 				E65ACF23178A1042009958FC /* ow.caf */,
 				E65ACF24178A1042009958FC /* PackTextures.sh */,
 				E65ACF25178A1042009958FC /* sprites-hd.plist */,
 				E65ACF26178A1042009958FC /* sprites-hd.pvr.ccz */,
 				E65ACF27178A1042009958FC /* sprites.plist */,
 				E65ACF28178A1042009958FC /* sprites.pvr.ccz */,
+				E6A995BC17BD13D200ED0CF7 /* T-hd.png */,
+				E6A995BE17BD13D200ED0CF7 /* T-ipadhd.png */,
+				E6AE232817A3F25000315C08 /* T.png */,
+				E691C2C117BE4F5A007DDC97 /* thulpBoothBottom.png */,
+				E691C2BF17BE4F4B007DDC97 /* thulpBoothTop.png */,
+				E698314017BD628900B251EA /* ThulpEm-hd.plist */,
+				E691C2C917BE5040007DDC97 /* Construction400.png */,
+				E691C2C717BE5035007DDC97 /* Construction400Face.png */,
+				E691C2C317BE5013007DDC97 /* singer400face.png */,
+				E691C2C517BE5025007DDC97 /* Headset400Face.png */,
+				E698314117BD628900B251EA /* ThulpEm-hd.png */,
+				E698314217BD628900B251EA /* ThulpEm-ipadhd.plist */,
+				E698314317BD628900B251EA /* ThulpEm-ipadhd.png */,
+				E698313E17BD628900B251EA /* ThulpEm.plist */,
+				E698313F17BD628900B251EA /* ThulpEm.png */,
+				E6760CB317B9529000196B91 /* ThulpEm1.aac */,
+				E695F7C217B98CD200AC3086 /* ThulpEm1.aiff */,
+				E6760CAD17B92F6E00196B91 /* ThulpEm1.wav */,
+				E66DE39A17B7F3020095B6C1 /* thulpHoles.png */,
+				E691C2CB17BE5128007DDC97 /* ThulpEm.plist */,
+				E691C2D917BE52BF007DDC97 /* ThulpEm.plist */,
+				E691C2DA17BE52BF007DDC97 /* ThulpEm.png */,
+				E691C2DB17BE52BF007DDC97 /* ThulpEm-hd.plist */,
+				E691C2DC17BE52BF007DDC97 /* ThulpEm-hd.png */,
+				E691C2DD17BE52C0007DDC97 /* ThulpEm-ipadhd.plist */,
+				E691C2DE17BE52C0007DDC97 /* ThulpEm-ipadhd.png */,
+				E691C2DF17BE52C0007DDC97 /* Thulpster.tps */,
+				E691C2CC17BE5128007DDC97 /* ThulpEm.png */,
+				E691C2CD17BE5128007DDC97 /* ThulpEm-hd.plist */,
+				E691C2CE17BE5128007DDC97 /* ThulpEm-hd.png */,
+				E691C2CF17BE5128007DDC97 /* ThulpEm-ipadhd.plist */,
+				E691C2D017BE5128007DDC97 /* ThulpEm-ipadhd.png */,
+				E691C2D117BE5128007DDC97 /* Thulpster.tps */,
+				E6A995BD17BD13D200ED0CF7 /* Thulpster-hd.plist */,
+				E6A995BF17BD13D200ED0CF7 /* Thulpster-ipadhd.plist */,
+				E698314417BD628900B251EA /* Thulpster.tps */,
+				E6A995C017BD13D300ED0CF7 /* Thulpster.tps */,
+				E637E78517BD2BDB0054E111 /* wallpaper-hd.jpg */,
 				E65ACF29178A1042009958FC /* wallpaper.jpg */,
 				E65ACF2A178A1042009958FC /* whack.caf */,
+				E6D9A2A617BD215300E9AC3D /* ThulpEm.plist */,
+				E6D9A2A717BD215300E9AC3D /* ThulpEm.png */,
+				E6D9A2A817BD215300E9AC3D /* ThulpEm-hd.plist */,
+				E6D9A2A917BD215400E9AC3D /* ThulpEm-hd.png */,
+				E6D9A2AA17BD215400E9AC3D /* ThulpEm-ipadhd.plist */,
+				E6D9A2AB17BD215400E9AC3D /* ThulpEm-ipadhd.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -978,7 +1129,11 @@
 				E6B6F6D9178AE550007C6B92 /* frame@2x.png */,
 				E6B8FFA4179C871E009E5B73 /* faceMaskv1.png */,
 				E6BD499717A15A5D00ED6A7E /* FaceMask2Transparent.png */,
+				E6A995B717BD00A200ED0CF7 /* Girl400Mask-hd.png */,
 				E6BD499417A15A5500ED6A7E /* FaceMask2.png */,
+				E6A995BA17BD00AE00ED0CF7 /* Girl400MaskBW-hd.png */,
+				E6C5D84F17BCF11C0006860E /* faceMask400-a.png */,
+				E695F7BF17B982B400AC3086 /* faceMask400-hd.png */,
 				E6A4B61C178F420C005A2D6E /* Robot-4.jpg */,
 				E6B6F6DA178AE550007C6B92 /* steve.png */,
 			);
@@ -1124,7 +1279,58 @@
 				E6BD499517A15A5500ED6A7E /* FaceMask2.png in Resources */,
 				E6BD499817A15A5D00ED6A7E /* FaceMask2Transparent.png in Resources */,
 				E6AE232917A3F25000315C08 /* T.png in Resources */,
-				E6AE232C17A3F2D500315C08 /* Thulpster.plist in Resources */,
+				E66DE39B17B7F3020095B6C1 /* thulpHoles.png in Resources */,
+				E6760CAE17B92F6E00196B91 /* ThulpEm1.wav in Resources */,
+				E6760CB017B93B5400196B91 /* moleHeadset200-hd.png in Resources */,
+				E6C311F517B96E0100CC2634 /* Girl400.png in Resources */,
+				E6B7FDF817B97134005EC738 /* Headset400.png in Resources */,
+				E695F7C017B982B400AC3086 /* faceMask400-hd.png in Resources */,
+				E695F7C317B98CD200AC3086 /* ThulpEm1.aiff in Resources */,
+				E6C5D85017BCF11C0006860E /* faceMask400-a.png in Resources */,
+				E6A995B817BD00A200ED0CF7 /* Girl400Mask-hd.png in Resources */,
+				E6A995BB17BD00AE00ED0CF7 /* Girl400MaskBW-hd.png in Resources */,
+				E6A995C117BD13D300ED0CF7 /* T-hd.png in Resources */,
+				E6A995C217BD13D300ED0CF7 /* Thulpster-hd.plist in Resources */,
+				E6A995C317BD13D300ED0CF7 /* T-ipadhd.png in Resources */,
+				E6A995C417BD13D300ED0CF7 /* Thulpster-ipadhd.plist in Resources */,
+				E6A995C517BD13D300ED0CF7 /* Thulpster.tps in Resources */,
+				E6D9A2AC17BD215400E9AC3D /* ThulpEm.plist in Resources */,
+				E6D9A2AD17BD215400E9AC3D /* ThulpEm.png in Resources */,
+				E6D9A2AE17BD215400E9AC3D /* ThulpEm-hd.plist in Resources */,
+				E6D9A2AF17BD215400E9AC3D /* ThulpEm-hd.png in Resources */,
+				E6D9A2B017BD215400E9AC3D /* ThulpEm-ipadhd.plist in Resources */,
+				E6D9A2B117BD215400E9AC3D /* ThulpEm-ipadhd.png in Resources */,
+				E637E78617BD2BDB0054E111 /* wallpaper-hd.jpg in Resources */,
+				E637E78917BD34BE0054E111 /* Icon-Small@2x-hd.png in Resources */,
+				E637E78B17BD35150054E111 /* Icon-Small-hd.png in Resources */,
+				E637E78D17BD35300054E111 /* Icon@2x-hd.png in Resources */,
+				E698314517BD628900B251EA /* ThulpEm.plist in Resources */,
+				E698314617BD628900B251EA /* ThulpEm.png in Resources */,
+				E698314717BD628900B251EA /* ThulpEm-hd.plist in Resources */,
+				E698314817BD628900B251EA /* ThulpEm-hd.png in Resources */,
+				E698314917BD628900B251EA /* ThulpEm-ipadhd.plist in Resources */,
+				E698314A17BD628900B251EA /* ThulpEm-ipadhd.png in Resources */,
+				E698314B17BD628900B251EA /* Thulpster.tps in Resources */,
+				E691C2C017BE4F4B007DDC97 /* thulpBoothTop.png in Resources */,
+				E691C2C217BE4F5A007DDC97 /* thulpBoothBottom.png in Resources */,
+				E691C2C417BE5013007DDC97 /* singer400face.png in Resources */,
+				E691C2C617BE5025007DDC97 /* Headset400Face.png in Resources */,
+				E691C2C817BE5035007DDC97 /* Construction400Face.png in Resources */,
+				E691C2CA17BE5040007DDC97 /* Construction400.png in Resources */,
+				E691C2D217BE5128007DDC97 /* ThulpEm.plist in Resources */,
+				E691C2D317BE5128007DDC97 /* ThulpEm.png in Resources */,
+				E691C2D417BE5128007DDC97 /* ThulpEm-hd.plist in Resources */,
+				E691C2D517BE5128007DDC97 /* ThulpEm-hd.png in Resources */,
+				E691C2D617BE5128007DDC97 /* ThulpEm-ipadhd.plist in Resources */,
+				E691C2D717BE5128007DDC97 /* ThulpEm-ipadhd.png in Resources */,
+				E691C2D817BE5128007DDC97 /* Thulpster.tps in Resources */,
+				E691C2E017BE52C0007DDC97 /* ThulpEm.plist in Resources */,
+				E691C2E117BE52C0007DDC97 /* ThulpEm.png in Resources */,
+				E691C2E217BE52C0007DDC97 /* ThulpEm-hd.plist in Resources */,
+				E691C2E317BE52C0007DDC97 /* ThulpEm-hd.png in Resources */,
+				E691C2E417BE52C0007DDC97 /* ThulpEm-ipadhd.plist in Resources */,
+				E691C2E517BE52C0007DDC97 /* ThulpEm-ipadhd.png in Resources */,
+				E691C2E617BE52C0007DDC97 /* Thulpster.tps in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

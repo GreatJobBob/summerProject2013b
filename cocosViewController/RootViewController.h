@@ -21,7 +21,9 @@
     
 }
 
--(void) moveBannerOnScreen;
++(void) moveBannerOnScreen;
+-(void) moveBannerOffScreen;
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner;
 
 
 @end

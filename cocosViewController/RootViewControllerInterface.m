@@ -9,10 +9,12 @@
 #import "RootViewControllerInterface.h"
 #import "ImageManipulationAppDelegate.h"
 #import "PhotoBoothController.h"
+#import "RootViewController.h"
 
 @implementation RootViewControllerInterface
 
 @synthesize rootViewController;
+@synthesize popoverPhotoManip;
 
 #pragma mark -
 #pragma mark Singleton Variables
@@ -67,13 +69,53 @@ static RootViewControllerInterface *rootViewControllerInterfaceSingletonDelegate
 
 
 -(void) manipulateImage {
-    PhotoBoothController *_photoBooth = [[PhotoBoothController alloc] initWithNibName:@"PhotoBoothController" bundle:nil];
     
-    [rootViewController presentModalViewController:_photoBooth animated:YES];
+    
+      PhotoBoothController *_photoBooth = [[PhotoBoothController alloc] initWithNibName:@"PhotoBoothController" bundle:nil];
+    
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        self.popoverPhotoManip = [[UIPopoverController alloc]
+                        initWithContentViewController:_photoBooth];
+        
+        self.popoverPhotoManip.delegate = self;
+        
+        [popoverPhotoManip presentPopoverFromRect:CGRectMake(0.0, 0.0, 400.0, 400.0)
+                                 inView: rootViewController.view.window
+               permittedArrowDirections:UIPopoverArrowDirectionAny
+                               animated:YES];
+        
+    }
+    else
+    {
+        
+      
+        
+        [rootViewController presentModalViewController:_photoBooth animated:YES];
+    }
+    
+
+      
+    
     
     
   
 }
+
+
+- (void)closeClicked {
+    
+    
+    
+    [self.popoverPhotoManip dismissPopoverAnimated:YES];
+   // [self.parentViewController dismissPopoverAnimated:TRUE];
+    
+}
+
+
+
+
+
 
 -(void) sendContactMail {
     MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];

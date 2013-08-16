@@ -7,7 +7,7 @@
 //
 
 #import "PhotoBoothController.h"
-
+#import "RootViewControllerInterface.h"
 
 
 @implementation PhotoBoothController
@@ -15,6 +15,8 @@
 @synthesize photoImage;
 @synthesize selectedImage;
 @synthesize faceImageView2;
+@synthesize popover;
+@synthesize faceMaskImage;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,8 +34,6 @@
   [_marque release];
     [_CloseView release];
     [_ChooseButton release];
-    [faceImage release];
-    [faceImageView release];
     [faceImageView2 release];
   [super dealloc];
 }
@@ -196,13 +196,7 @@
   [self setCanvas:nil];
     [self setCloseView:nil];
     [self setChooseButton:nil];
-    [faceImage release];
-    faceImage = nil;
-    [faceImageView release];
-    faceImageView = nil;
-    [faceImageView2 release];
-    faceImageView2 = nil;
-  [super viewDidUnload];
+ [super viewDidUnload];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -218,9 +212,9 @@
 - (IBAction)CloseClicked:(id)sender {
     
     
-    
-    
-    [self dismissModalViewControllerAnimated:YES];
+    [[RootViewControllerInterface rootViewControllerInterfaceSharedInstance] closeClicked];
+   [self dismissModalViewControllerAnimated:YES];
+    [ self.parentViewController dismissPopoverAnimated:TRUE];
     
 }
 
@@ -244,28 +238,63 @@
     
     UIGraphicsBeginImageContext(canvas.bounds.size);
     
+    
+    //save image in view to context
     [canvas.layer renderInContext:UIGraphicsGetCurrentContext()];
   //  [customView.layer renderInContext:UIGraphicsGetCurrentContext()];
     
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     
     UIGraphicsEndImageContext();
-
+    
+ 
+    
+    // create a new context same size as cropping view window
+    UIGraphicsBeginImageContext(canvas.bounds.size);
+    
+    // place image in context
+    [newImage drawInRect:CGRectMake(canvas.bounds.origin.x,canvas.bounds.origin.y,canvas.bounds.size.width,canvas.bounds.size.height)];
+    
+    UIGraphicsEndImageContext();
+    
+    
+    // Drawing code here.
+    
+    
+    
+/*
     // now mask the image
     
-    UIImage *maskImage = [UIImage imageNamed:@"FaceMask2.png"];
+    UIImage *maskImage = [UIImage imageNamed:@"FaceMask400-hd.png"];
     UIImage *imageWithMask = [self maskAnImage:newImage withMask:maskImage];
     
  
     // Scale the image to mole size
-    CGSize newSize = CGSizeMake(170.0, 230.0);
-    UIGraphicsBeginImageContext( newSize );
-    [imageWithMask drawInRect:CGRectMake(0,0,newSize.width,newSize.height)];
+   // CGSize newSize = CGSizeMake(400.0, 400.0);
+   // UIGraphicsBeginImageContext( newSize );
+    
+    // skip mask while testing size
+    //[imageWithMask drawInRect:CGRectMake(0,0,newSize.width,newSize.height)];
+   
+    // create a new context same size as cropping view window
+    UIGraphicsBeginImageContext(photoImage.bounds.size);
+
+    // place image in context
+   [newImage drawInRect:CGRectMake(photoImage.bounds.origin.x,photoImage.bounds.origin.y,photoImage.bounds.size.width,photoImage.bounds.size.height)];
+   
+    
     UIImage* scaledMaskedImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
+    */
+   
+    UIImage *maskImage = [UIImage imageNamed:@"Girl400MaskBW-hd.png"];
+    //UIImage *maskImage = faceMaskImage.image;
+    
+    UIImage *imageWithMask = [self maskAnImage:newImage withMask:maskImage];
     
     
-    NSData *pngData = UIImagePNGRepresentation(scaledMaskedImage);
+    
+    NSData *pngData = UIImagePNGRepresentation(imageWithMask);
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory
     NSString *filePath = [documentsPath stringByAppendingPathComponent:@"myMole.png"]; //Add the file name
@@ -276,7 +305,6 @@
     // load custom mole
     pngData = [NSData dataWithContentsOfFile:filePath];
     pickedImage = [UIImage imageWithData:pngData];
-    [photoImage setImage:pickedImage];
     
   
 }
@@ -303,11 +331,24 @@
                                         picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
                                         
                                     }
-                                    
-                                    [self presentModalViewController:picker animated:YES];
-                                    
-                                
     
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        self.popover = [[UIPopoverController alloc]
+                        initWithContentViewController:picker];
+        self.popover.delegate = self;
+        [popover presentPopoverFromRect:CGRectMake(0.0, 0.0, 400.0, 400.0)
+                                 inView:self.view.window
+               permittedArrowDirections:UIPopoverArrowDirectionAny
+                               animated:YES];
+    }
+    else
+    {
+                                    
+        [self presentModalViewController:picker animated:YES];
+    }
+                                
+   
     
 }
 
@@ -315,6 +356,8 @@
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *) Picker {
     
     [[Picker parentViewController] dismissModalViewControllerAnimated:YES];
+    [popover dismissPopoverAnimated:YES];
+    
     
     [Picker release];
     
@@ -322,9 +365,13 @@
 
 
 
+
 - (void)imagePickerController:(UIImagePickerController *) Picker
 
 didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    [popover dismissPopoverAnimated:YES];
+    
     
      pickedImage = [info objectForKey:UIImagePickerControllerOriginalImage];
     

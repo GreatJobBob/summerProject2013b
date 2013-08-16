@@ -11,11 +11,15 @@
 #import <MessageUI/MessageUI.h>
 #import <MessageUI/MFMailComposeViewController.h>
 
-@interface RootViewControllerInterface : NSObject  {
+@interface RootViewControllerInterface : NSObject <UIPopoverControllerDelegate> {
     UIViewController *rootViewController;
+    UIPopoverController *popoverPhotoManip;
 }
 
+@property (retain, nonatomic) IBOutlet UIPopoverController *popoverPhotoManip;
 @property (nonatomic, retain) UIViewController *rootViewController;
+
+
 
 #pragma mark -
 #pragma mark Singleton Methods
@@ -24,5 +28,5 @@
 -(void) presentModalViewController:(UIViewController*)controller animated:(BOOL)animated;
 -(void) sendContactMail;
 -(void) manipulateImage;
-
+-(void) closeClicked;
 @end

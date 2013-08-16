@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
 @class RootViewController;
 
@@ -17,5 +18,7 @@
 
 @property (nonatomic, retain) UIWindow *window;
 @property(nonatomic, assign) id<UINavigationControllerDelegate> delegate;
+
+
 
 @end
