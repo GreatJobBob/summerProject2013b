@@ -191,14 +191,26 @@
             myMole = [CCSprite spriteWithFile:filePath];
         }
         else {
-            //Do somthing else.
+            myMole = [CCSprite spriteWithFile:@"steve.png"];
         }
 
         
         // Images are stored in larger size so scale to fit
-        myMole.scale=(.55 * [UIScreen mainScreen].scale);
         
-        myMole.position = [self convertPoint:ccp(34, 60)];
+        
+        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        myMole.scale=(.55 * [UIScreen mainScreen].scale);
+             myMole.position = [self convertPoint:ccp(34, 60)];
+        }
+        else{
+             myMole.scale=(.25 * [UIScreen mainScreen].scale);//iPhone
+             myMole.position = [self convertPoint:ccp(50, 90)];
+        }
+        
+        
+        
+        
+       
         
         
         // Load sprites

@@ -15,6 +15,7 @@
 #import "RootViewControllerInterface.h"
 #import "HelloWorldScene.h"
 #import "IntroScene.h"
+#import "TestFlight.h"
 
 @implementation AppDelegate
 
@@ -23,6 +24,11 @@
 
 - (void) applicationDidFinishLaunching:(UIApplication*)application
 {
+    
+    // start of your application:didFinishLaunchingWithOptions // ...
+    [TestFlight takeOff:@"e38f3388-d8a2-4681-a04d-966b43d00e19"];
+    // The rest of your application:didFinishLaunchingWithOptions method// ...
+
 	// Init the window
 	window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	
@@ -130,6 +136,9 @@
     
     
 }
+
+
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

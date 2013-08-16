@@ -160,36 +160,18 @@
 		E66DE39B17B7F3020095B6C1 /* thulpHoles.png in Resources */ = {isa = PBXBuildFile; fileRef = E66DE39A17B7F3020095B6C1 /* thulpHoles.png */; };
 		E6760CAE17B92F6E00196B91 /* ThulpEm1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6760CAD17B92F6E00196B91 /* ThulpEm1.wav */; };
 		E6760CB017B93B5400196B91 /* moleHeadset200-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E6760CAF17B93B5300196B91 /* moleHeadset200-hd.png */; };
+		E677DF4817BE9368005BBC51 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E677DF4217BE9368005BBC51 /* libTestFlight.a */; };
+		E677DF4917BE9368005BBC51 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E677DF4317BE9368005BBC51 /* README.md */; };
+		E677DF4A17BE9368005BBC51 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = E677DF4417BE9368005BBC51 /* release_notes.md */; };
 		E691C2C017BE4F4B007DDC97 /* thulpBoothTop.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2BF17BE4F4B007DDC97 /* thulpBoothTop.png */; };
 		E691C2C217BE4F5A007DDC97 /* thulpBoothBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2C117BE4F5A007DDC97 /* thulpBoothBottom.png */; };
 		E691C2C417BE5013007DDC97 /* singer400face.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2C317BE5013007DDC97 /* singer400face.png */; };
 		E691C2C617BE5025007DDC97 /* Headset400Face.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2C517BE5025007DDC97 /* Headset400Face.png */; };
 		E691C2C817BE5035007DDC97 /* Construction400Face.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2C717BE5035007DDC97 /* Construction400Face.png */; };
 		E691C2CA17BE5040007DDC97 /* Construction400.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2C917BE5040007DDC97 /* Construction400.png */; };
-		E691C2D217BE5128007DDC97 /* ThulpEm.plist in Resources */ = {isa = PBXBuildFile; fileRef = E691C2CB17BE5128007DDC97 /* ThulpEm.plist */; };
-		E691C2D317BE5128007DDC97 /* ThulpEm.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2CC17BE5128007DDC97 /* ThulpEm.png */; };
-		E691C2D417BE5128007DDC97 /* ThulpEm-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E691C2CD17BE5128007DDC97 /* ThulpEm-hd.plist */; };
-		E691C2D517BE5128007DDC97 /* ThulpEm-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2CE17BE5128007DDC97 /* ThulpEm-hd.png */; };
-		E691C2D617BE5128007DDC97 /* ThulpEm-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E691C2CF17BE5128007DDC97 /* ThulpEm-ipadhd.plist */; };
-		E691C2D717BE5128007DDC97 /* ThulpEm-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2D017BE5128007DDC97 /* ThulpEm-ipadhd.png */; };
-		E691C2D817BE5128007DDC97 /* Thulpster.tps in Resources */ = {isa = PBXBuildFile; fileRef = E691C2D117BE5128007DDC97 /* Thulpster.tps */; };
-		E691C2E017BE52C0007DDC97 /* ThulpEm.plist in Resources */ = {isa = PBXBuildFile; fileRef = E691C2D917BE52BF007DDC97 /* ThulpEm.plist */; };
-		E691C2E117BE52C0007DDC97 /* ThulpEm.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2DA17BE52BF007DDC97 /* ThulpEm.png */; };
-		E691C2E217BE52C0007DDC97 /* ThulpEm-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E691C2DB17BE52BF007DDC97 /* ThulpEm-hd.plist */; };
-		E691C2E317BE52C0007DDC97 /* ThulpEm-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2DC17BE52BF007DDC97 /* ThulpEm-hd.png */; };
-		E691C2E417BE52C0007DDC97 /* ThulpEm-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E691C2DD17BE52C0007DDC97 /* ThulpEm-ipadhd.plist */; };
-		E691C2E517BE52C0007DDC97 /* ThulpEm-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = E691C2DE17BE52C0007DDC97 /* ThulpEm-ipadhd.png */; };
-		E691C2E617BE52C0007DDC97 /* Thulpster.tps in Resources */ = {isa = PBXBuildFile; fileRef = E691C2DF17BE52C0007DDC97 /* Thulpster.tps */; };
 		E693F52017A7EE90008A51EA /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E693F51F17A7EE90008A51EA /* iAd.framework */; };
 		E695F7C017B982B400AC3086 /* faceMask400-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E695F7BF17B982B400AC3086 /* faceMask400-hd.png */; };
 		E695F7C317B98CD200AC3086 /* ThulpEm1.aiff in Resources */ = {isa = PBXBuildFile; fileRef = E695F7C217B98CD200AC3086 /* ThulpEm1.aiff */; };
-		E698314517BD628900B251EA /* ThulpEm.plist in Resources */ = {isa = PBXBuildFile; fileRef = E698313E17BD628900B251EA /* ThulpEm.plist */; };
-		E698314617BD628900B251EA /* ThulpEm.png in Resources */ = {isa = PBXBuildFile; fileRef = E698313F17BD628900B251EA /* ThulpEm.png */; };
-		E698314717BD628900B251EA /* ThulpEm-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E698314017BD628900B251EA /* ThulpEm-hd.plist */; };
-		E698314817BD628900B251EA /* ThulpEm-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E698314117BD628900B251EA /* ThulpEm-hd.png */; };
-		E698314917BD628900B251EA /* ThulpEm-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E698314217BD628900B251EA /* ThulpEm-ipadhd.plist */; };
-		E698314A17BD628900B251EA /* ThulpEm-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = E698314317BD628900B251EA /* ThulpEm-ipadhd.png */; };
-		E698314B17BD628900B251EA /* Thulpster.tps in Resources */ = {isa = PBXBuildFile; fileRef = E698314417BD628900B251EA /* Thulpster.tps */; };
 		E6A4B61D178F420C005A2D6E /* Robot-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6A4B61C178F420C005A2D6E /* Robot-4.jpg */; };
 		E6A995B817BD00A200ED0CF7 /* Girl400Mask-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E6A995B717BD00A200ED0CF7 /* Girl400Mask-hd.png */; };
 		E6A995BB17BD00AE00ED0CF7 /* Girl400MaskBW-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E6A995BA17BD00AE00ED0CF7 /* Girl400MaskBW-hd.png */; };
@@ -241,7 +223,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6F1EEF8713B5CA3B00DC78F6 /* ThrashingTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThrashingTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1EEF8713B5CA3B00DC78F6 /* ThulpEm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThulpEm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1EEF8B13B5CA3B00DC78F6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6F1EEF8D13B5CA3B00DC78F6 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		6F1EEF8F13B5CA3B00DC78F6 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -514,6 +496,12 @@
 		E6760CAD17B92F6E00196B91 /* ThulpEm1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ThulpEm1.wav; sourceTree = "<group>"; };
 		E6760CAF17B93B5300196B91 /* moleHeadset200-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "moleHeadset200-hd.png"; sourceTree = "<group>"; };
 		E6760CB317B9529000196B91 /* ThulpEm1.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThulpEm1.aac; sourceTree = "<group>"; };
+		E677DF4217BE9368005BBC51 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		E677DF4317BE9368005BBC51 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		E677DF4417BE9368005BBC51 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		E677DF4517BE9368005BBC51 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		E677DF4617BE9368005BBC51 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		E677DF4717BE9368005BBC51 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		E691C2BF17BE4F4B007DDC97 /* thulpBoothTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thulpBoothTop.png; sourceTree = "<group>"; };
 		E691C2C117BE4F5A007DDC97 /* thulpBoothBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thulpBoothBottom.png; sourceTree = "<group>"; };
 		E691C2C317BE5013007DDC97 /* singer400face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singer400face.png; sourceTree = "<group>"; };
@@ -609,6 +597,7 @@
 				6F1EEF9613B5CA3B00DC78F6 /* UIKit.framework in Frameworks */,
 				6F1EEF9813B5CA3B00DC78F6 /* Foundation.framework in Frameworks */,
 				6F1EEF9A13B5CA3B00DC78F6 /* CoreGraphics.framework in Frameworks */,
+				E677DF4817BE9368005BBC51 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,7 +618,7 @@
 		6F1EEF8813B5CA3B00DC78F6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6F1EEF8713B5CA3B00DC78F6 /* ThrashingTime.app */,
+				6F1EEF8713B5CA3B00DC78F6 /* ThulpEm.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -656,6 +645,7 @@
 			children = (
 				6F1EF0ED13B5CA3D00DC78F6 /* AppDelegate.h */,
 				6F1EF0EE13B5CA3D00DC78F6 /* AppDelegate.m */,
+				E677DF4117BE9368005BBC51 /* TestFlightSDK2 */,
 				6F1EF0F013B5CA3D00DC78F6 /* RootViewController.h */,
 				6F1EF0F113B5CA3D00DC78F6 /* RootViewController.m */,
 				E6B6F6C4178A2A7C007C6B92 /* GameConfig.h */,
@@ -1085,6 +1075,19 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		E677DF4117BE9368005BBC51 /* TestFlightSDK2 */ = {
+			isa = PBXGroup;
+			children = (
+				E677DF4217BE9368005BBC51 /* libTestFlight.a */,
+				E677DF4317BE9368005BBC51 /* README.md */,
+				E677DF4417BE9368005BBC51 /* release_notes.md */,
+				E677DF4517BE9368005BBC51 /* TestFlight+AsyncLogging.h */,
+				E677DF4617BE9368005BBC51 /* TestFlight+ManualSessions.h */,
+				E677DF4717BE9368005BBC51 /* TestFlight.h */,
+			);
+			path = TestFlightSDK2;
+			sourceTree = "<group>";
+		};
 		E6B6F6C5178AE550007C6B92 /* ImageManipulation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1161,9 +1164,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6F1EEF8613B5CA3B00DC78F6 /* ThrashingTime */ = {
+		6F1EEF8613B5CA3B00DC78F6 /* ThulpEm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6F1EF0F913B5CA3D00DC78F6 /* Build configuration list for PBXNativeTarget "ThrashingTime" */;
+			buildConfigurationList = 6F1EF0F913B5CA3D00DC78F6 /* Build configuration list for PBXNativeTarget "ThulpEm" */;
 			buildPhases = (
 				6F1EEF8313B5CA3B00DC78F6 /* Sources */,
 				6F1EEF8413B5CA3B00DC78F6 /* Frameworks */,
@@ -1173,9 +1176,9 @@
 			);
 			dependencies = (
 			);
-			name = ThrashingTime;
+			name = ThulpEm;
 			productName = cocosViewController;
-			productReference = 6F1EEF8713B5CA3B00DC78F6 /* ThrashingTime.app */;
+			productReference = 6F1EEF8713B5CA3B00DC78F6 /* ThulpEm.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1186,7 +1189,7 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 			};
-			buildConfigurationList = 6F1EEF8113B5CA3B00DC78F6 /* Build configuration list for PBXProject "ThrashingTime" */;
+			buildConfigurationList = 6F1EEF8113B5CA3B00DC78F6 /* Build configuration list for PBXProject "ThulpEm" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1204,7 +1207,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				6F1EEF8613B5CA3B00DC78F6 /* ThrashingTime */,
+				6F1EEF8613B5CA3B00DC78F6 /* ThulpEm */,
 			);
 		};
 /* End PBXProject section */
@@ -1304,33 +1307,14 @@
 				E637E78917BD34BE0054E111 /* Icon-Small@2x-hd.png in Resources */,
 				E637E78B17BD35150054E111 /* Icon-Small-hd.png in Resources */,
 				E637E78D17BD35300054E111 /* Icon@2x-hd.png in Resources */,
-				E698314517BD628900B251EA /* ThulpEm.plist in Resources */,
-				E698314617BD628900B251EA /* ThulpEm.png in Resources */,
-				E698314717BD628900B251EA /* ThulpEm-hd.plist in Resources */,
-				E698314817BD628900B251EA /* ThulpEm-hd.png in Resources */,
-				E698314917BD628900B251EA /* ThulpEm-ipadhd.plist in Resources */,
-				E698314A17BD628900B251EA /* ThulpEm-ipadhd.png in Resources */,
-				E698314B17BD628900B251EA /* Thulpster.tps in Resources */,
 				E691C2C017BE4F4B007DDC97 /* thulpBoothTop.png in Resources */,
 				E691C2C217BE4F5A007DDC97 /* thulpBoothBottom.png in Resources */,
 				E691C2C417BE5013007DDC97 /* singer400face.png in Resources */,
 				E691C2C617BE5025007DDC97 /* Headset400Face.png in Resources */,
 				E691C2C817BE5035007DDC97 /* Construction400Face.png in Resources */,
 				E691C2CA17BE5040007DDC97 /* Construction400.png in Resources */,
-				E691C2D217BE5128007DDC97 /* ThulpEm.plist in Resources */,
-				E691C2D317BE5128007DDC97 /* ThulpEm.png in Resources */,
-				E691C2D417BE5128007DDC97 /* ThulpEm-hd.plist in Resources */,
-				E691C2D517BE5128007DDC97 /* ThulpEm-hd.png in Resources */,
-				E691C2D617BE5128007DDC97 /* ThulpEm-ipadhd.plist in Resources */,
-				E691C2D717BE5128007DDC97 /* ThulpEm-ipadhd.png in Resources */,
-				E691C2D817BE5128007DDC97 /* Thulpster.tps in Resources */,
-				E691C2E017BE52C0007DDC97 /* ThulpEm.plist in Resources */,
-				E691C2E117BE52C0007DDC97 /* ThulpEm.png in Resources */,
-				E691C2E217BE52C0007DDC97 /* ThulpEm-hd.plist in Resources */,
-				E691C2E317BE52C0007DDC97 /* ThulpEm-hd.png in Resources */,
-				E691C2E417BE52C0007DDC97 /* ThulpEm-ipadhd.plist in Resources */,
-				E691C2E517BE52C0007DDC97 /* ThulpEm-ipadhd.png in Resources */,
-				E691C2E617BE52C0007DDC97 /* Thulpster.tps in Resources */,
+				E677DF4917BE9368005BBC51 /* README.md in Resources */,
+				E677DF4A17BE9368005BBC51 /* release_notes.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1510,6 +1494,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Roslyn Robot Company Inc (L4S5L4E3D9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Roslyn Robot Company Inc (L4S5L4E3D9)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1518,8 +1504,15 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = cocosViewController/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../TestFlightSDK2\"",
+					"\"$(SRCROOT)/cocosViewController/TestFlightSDK2\"",
+				);
 				OTHER_LDFLAGS = "-lz";
-				PRODUCT_NAME = ThrashingTime;
+				PRODUCT_NAME = ThulpEm;
+				PROVISIONING_PROFILE = "8654EA8F-B7C1-4432-95CE-CC5F637CDDFD";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F058E108-9645-4DF6-9024-4AEE9C0EEBDD";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1529,6 +1522,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Roslyn Robot Company Inc (L4S5L4E3D9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Roslyn Robot Company Inc (L4S5L4E3D9)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = cocosViewController/Prefix.pch;
@@ -1536,8 +1531,15 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = cocosViewController/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../TestFlightSDK2\"",
+					"\"$(SRCROOT)/cocosViewController/TestFlightSDK2\"",
+				);
 				OTHER_LDFLAGS = "-lz";
-				PRODUCT_NAME = ThrashingTime;
+				PRODUCT_NAME = ThulpEm;
+				PROVISIONING_PROFILE = "F058E108-9645-4DF6-9024-4AEE9C0EEBDD";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8654EA8F-B7C1-4432-95CE-CC5F637CDDFD";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -1547,7 +1549,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6F1EEF8113B5CA3B00DC78F6 /* Build configuration list for PBXProject "ThrashingTime" */ = {
+		6F1EEF8113B5CA3B00DC78F6 /* Build configuration list for PBXProject "ThulpEm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6F1EF0F713B5CA3D00DC78F6 /* Debug */,
@@ -1556,7 +1558,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6F1EF0F913B5CA3D00DC78F6 /* Build configuration list for PBXNativeTarget "ThrashingTime" */ = {
+		6F1EF0F913B5CA3D00DC78F6 /* Build configuration list for PBXNativeTarget "ThulpEm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6F1EF0FA13B5CA3D00DC78F6 /* Debug */,

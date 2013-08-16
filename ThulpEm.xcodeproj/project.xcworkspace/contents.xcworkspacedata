@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ThrashingTime.xcodeproj">
+      location = "self:ThulpEm.xcodeproj">
    </FileRef>
 </Workspace>
